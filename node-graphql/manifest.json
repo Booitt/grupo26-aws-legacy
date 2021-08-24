@@ -1,0 +1,19 @@
+{
+  "name": "hiringcoders202126",
+  "vendor": "awsnode",
+  "version": "0.0.1",
+  "title": "Backend",
+  "description": "Reference app for the Backend Course",
+  "builders": {
+    "node": "6.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [],
+  "dependencies": {
+    "vtex.events-example": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
