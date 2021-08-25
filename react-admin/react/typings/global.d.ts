@@ -1,7 +1,8 @@
-export interface TimeSplit {
-  hours: string
-  minutes: string
-  seconds: string
-}
+import { FunctionComponent } from 'react'
 
-type GenericObject = Record<string, any>
+declare global {
+  interface StorefrontFunctionComponent<P = {}> extends FunctionComponent<P> {
+    schema?: object
+    getSchema?(props?: P): object
+  }
+}

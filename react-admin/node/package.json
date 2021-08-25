@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "@vtex/api": "^3.0.0"
+    "@vtex/api": "6.45.0"
   },
   "devDependencies": {
-    "@types/node": "8.x",
-    "@vtex/api": "^3.0.0",
-    "typescript": "3.9.4"
+    "@types/node": "^12.0.0",
+    "@vtex/api": "6.45.0",
+    "typescript": "3.9.7"
   },
   "resolutions": {
     "**/**/minimist": "^0.2.1",
