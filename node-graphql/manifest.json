@@ -1,6 +1,6 @@
 {
-  "name": "hiringcoders202126",
-  "vendor": "awsnode",
+  "name": "awsnode",
+  "vendor": "hiringcoders202126",
   "version": "0.0.1",
   "title": "Backend",
   "description": "Reference app for the Backend Course",
