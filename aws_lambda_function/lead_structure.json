@@ -1,0 +1,10 @@
+[
+	{
+		"id": "string",
+		"nome": "string",
+		"email": "string",
+		"telefone": "string",
+		"prospectSince": "date",
+		"clientSince": "date | false"
+	}
+]
