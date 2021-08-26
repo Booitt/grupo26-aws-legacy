@@ -1,0 +1,90 @@
+{
+  "vtex.menu@2.x:menu#footer-desktop": {
+    "props": {
+      "blockClass": "footer-menu"
+    },
+    "children": [
+      "menu-item#about-us",
+      "menu-item#privacidade",
+      "menu-item#termos",
+      "menu-item#cookies"
+    ]
+  },
+
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sobre",
+        "text": "Sobre "
+      }
+    }
+  },
+
+  "menu-item#privacidade": {
+    "props": {
+      "id": "menu-item-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Privacidade",
+        "text": "Privacidade "
+      }
+    }
+  },
+
+  "menu-item#termos": {
+    "props": {
+      "id": "menu-item-termos-do-site",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Termos",
+        "text": "Termos do Site "
+      }
+    }
+  },
+
+  "menu-item#cookies": {
+    "props": {
+      "id": "menu-item-cookies",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Cookies",
+        "text": "Preferências de cookies"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-menu"
+    },
+    "children": [
+      "menu-item#about-us",
+      "menu-item#privacidade",
+      "menu-item#termos",
+      "menu-item#cookies"
+    ]
+  }
+}

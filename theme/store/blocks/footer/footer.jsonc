@@ -1,0 +1,172 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#desktop-footer"]
+  },
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#mobile-footer"]
+  },
+
+  // Layout Desktop
+
+  "flex-layout.row#desktop-footer": {
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#pages",
+      "flex-layout.col#socials"
+    ]
+  },
+  /*
+   * Coluna a esquerda - Logo e Pagamentos
+   */
+  "flex-layout.col#left": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["flex-layout.row#left-top", "flex-layout.row#left-bottom"]
+  },
+  "flex-layout.row#left-top": {
+    "props": {
+      "marginTop": 2,
+      "paddingTop": 5,
+      "preventHorizontalStretch": true
+    },
+    "children": ["powered-by"]
+  },
+  "flex-layout.row#left-bottom": {
+    "props": {
+      "marginTop": 1,
+      "paddingTop": 2,
+      "paddingBottom": 5
+    },
+    "children": ["accepted-payment-methods"]
+  },
+
+  "powered-by": {
+    "props": {
+      "showInColor": false
+    }
+  },
+
+  "accepted-payment-methods": {
+    "props": {
+      "showInColor": false,
+      "paymentMethods": ["mastercard", "visa", "diners club"]
+    }
+  },
+
+  /*
+   * Coluna Central - Menu
+   */
+
+  "flex-layout.col#pages": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "width": "50%"
+    },
+    "children": ["flex-layout.row#center-top", "flex-layout.row#center-bottom"]
+  },
+  "flex-layout.row#center-top": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["vtex.menu@2.x:menu#footer-desktop"]
+  },
+  "flex-layout.row#center-bottom": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": ["rich-text#footer-1", "rich-text#footer-2"]
+  },
+  "rich-text#footer-1": {
+    "props": {
+      "blockClass": "footer-copyright",
+      "text": "© 2021, Amazon Web Services, Inc. ou suas afiliadas."
+    }
+  },
+  "rich-text#footer-2": {
+    "props": {
+      "blockClass": "footer-copyright",
+      "text": "Todos os direitos reservados."
+    }
+  },
+
+  /*
+   * Coluna da Direita - Redes Sociais
+   */
+
+  "flex-layout.col#socials": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": ["flex-layout.row#right-top"]
+  },
+  "flex-layout.row#right-top": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": ["social-networks"]
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/amazonwebservices", "name": "Facebook" },
+        { "url": "https://twitter.com/awscloud", "name": "Twitter" },
+        { "url": "https://linkedin.com/awscloud", "name": "Linkedin" },
+        { "url": "https://youtube.com/awscloud", "name": "Youtube" }
+      ]
+    }
+  },
+
+  //Layout Mobile
+
+  "flex-layout.row#mobile-footer": {
+    "children": [
+      //"social-networks",
+      "flex-layout.row#mobile-social",
+      "vtex.menu@2.x:menu#footer-mobile",
+      //"powered-by",
+      "flex-layout.row#mobile-copyright"
+    ]
+  },
+  "flex-layout.row#mobile-social": {
+    "props": {
+      "marginTop": 2,
+      "paddingTop": 3,
+      "paddingBottom": 3,
+      "blockClass": "mobile-social",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["social-networks"]
+  },
+  "flex-layout.row#mobile-copyright": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": ["rich-text#footer-1", "rich-text#footer-2"]
+  }
+}
