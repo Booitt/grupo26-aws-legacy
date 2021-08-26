@@ -1,7 +1,9 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "rich-text",
+      "responsive-layout.desktop#home-slider",
+      "responsive-layout.phone#home-slider"
     ]
   },
   "rich-text": { 
