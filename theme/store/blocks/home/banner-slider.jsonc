@@ -15,6 +15,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
       "blockClass": "carousel",
       "navigationStep": 1,
       "fullWidth": true

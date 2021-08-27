@@ -20,6 +20,7 @@
 .flexRowContent--flex-2 {
   margin-top: 5%;
   margin-bottom: 5%;
+  justify-content: space-around;
 }
 .flexRow--logo-phone {
   margin-top: 10%;
@@ -36,12 +37,18 @@
 }
 .flexColChild--form-desktop {
   position: relative;
-  right: -30%;
+  /* right: -30%; */
   width: 400px;
 }
 .flexRowContent--copyright {
   margin-top: 2%;
+  padding-left: 20px;
+  margin-bottom: 2%;
 }
+.flexRowContent--mobile-social {
+  padding-left: 20px;
+}
+
 .flexRow--slider-form-border {
   background-color: #fff;
 }
