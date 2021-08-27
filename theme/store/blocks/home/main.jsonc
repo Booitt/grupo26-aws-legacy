@@ -1,17 +1,8 @@
 {
-  "store.home": {
-    "blocks": [
-      "responsive-layout.desktop",
-      "responsive-layout.tablet",
-      "responsive-layout.phone",
-      "responsive-layout.desktop#home-slider",
-      "responsive-layout.phone#home-slider"
-    ]
-  },
-  //desktop
   "responsive-layout.desktop": {
     "children": ["flex-layout.row#banner", "flex-layout.row#banner2"]
   },
+
   "flex-layout.row#banner": {
     "props": {
       "horizontalAlign": "center",
@@ -23,6 +14,7 @@
     },
     "children": ["flex-layout.col#logo-home", "flex-layout.col#text-form"]
   },
+
   "flex-layout.col#logo-home": {
     "children": ["image#banner"]
   },
@@ -30,12 +22,14 @@
   "flex-layout.col#text-form": {
     "children": ["rich-text#form"]
   },
+
   "image#banner": {
     "props": {
       "src": "assets/home/logo-home.svg",
       "blockClass": "logoAWS"
     }
   },
+
   "rich-text#form": {
     "props": {
       "textAlignment": "CENTER",
@@ -44,6 +38,7 @@
       "blockClass": "form-text"
     }
   },
+
   "flex-layout.row#banner2": {
     "children": ["flex-layout.col#text-banner", "flex-layout.col#form"],
     "props": {
@@ -55,9 +50,11 @@
       "blockClass": "flex-2"
     }
   },
+
   "flex-layout.col#text-banner": {
     "children": ["rich-text#banner-text"]
   },
+
   "rich-text#banner-text": {
     "props": {
       "textAlignment": "CENTER",
@@ -72,10 +69,12 @@
       "blockClass": "form-desktop"
     }
   },
+
   // Layout tablet
   "responsive-layout.tablet": {
     "children": []
   },
+
   // Layout phone
   "responsive-layout.phone": {
     "children": [
@@ -85,6 +84,7 @@
       "flex-layout.row#form"
     ]
   },
+
   "flex-layout.row#logo-phone": {
     "props": {
       "horizontalAlign": "center",
@@ -96,6 +96,7 @@
     },
     "children": ["flex-layout.col#logo-phone"]
   },
+
   "flex-layout.col#logo-phone": {
     "children": ["image#logo-phone"],
     "props": {
@@ -108,6 +109,7 @@
       "blockClass": "logo-phone-img"
     }
   },
+
   "flex-layout.row#text": {
     "props": {
       "horizontalAlign": "center",
@@ -119,18 +121,21 @@
     },
     "children": ["flex-layout.col#logo-text1", "flex-layout.col#logo-text2"]
   },
+
   "flex-layout.col#logo-text1": {
     "children": ["rich-text#logo-text1"],
     "props": {
       "blockClass": "rich-text-1"
     }
   },
+
   "flex-layout.col#logo-text2": {
     "children": ["rich-text#logo-text2"],
     "props": {
       "blockClass": "rich-text-2"
     }
   },
+
   "rich-text#logo-text1": {
     "props": {
       "textAlignment": "CENTER",
@@ -139,6 +144,7 @@
       "blockClass": "text-mobile1"
     }
   },
+
   "rich-text#logo-text2": {
     "props": {
       "textAlignment": "CENTER",
@@ -147,6 +153,7 @@
       "blockClass": "text-mobile2"
     }
   },
+
   "flex-layout.row#form-text": {
     "props": {
       "horizontalAlign": "center",
@@ -158,12 +165,14 @@
     },
     "children": ["flex-layout.col#rich-text"]
   },
+
   "flex-layout.col#rich-text": {
     "children": ["rich-text#form-mobile"],
     "props": {
       "blockClass": "text-form"
     }
   },
+
   "rich-text#form-mobile": {
     "props": {
       "textAlignment": "CENTER",
