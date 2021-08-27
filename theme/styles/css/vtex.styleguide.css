@@ -1,0 +1,9 @@
+.container{
+    background-color: #c0c1c3;
+    border: 0;
+    box-shadow: 0 0 2px #3a3a3a;
+}
+
+.container:hover{
+    background-color: #b3b3b4;
+}
