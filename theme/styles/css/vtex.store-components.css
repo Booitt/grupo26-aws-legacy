@@ -3,22 +3,30 @@
 .imageElement--logoAWS {
   max-width: 500px;
 }
-.imageElement--logo-phone-img{
-    max-width: 240px;
+.imageElement--logo-phone-img {
+  max-width: 240px;
 }
-.imageElement--logo-header{
-    margin-left: 20px;
+.imageElement--logo-header {
+  margin-left: 20px;
 }
 .imageElement--logo-phone-img {
   max-width: 240px;
 }
-.imageElement--img-banner{
+.imageElement--img-banner {
   width: 100%;
   height: 300px;
-  opacity: 0.9
+  opacity: 0.9;
 }
-.imageElement--background-benefits{
+.imageElement--background-benefits {
   width: 1150px;
   height: auto;
   margin: 0 20px 40px;
+}
+
+.imageElement--cover {
+  object-fit: cover;
+}
+.productImage {
+  width: 50%;
+  margin: 0 auto;
 }

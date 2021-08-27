@@ -47,19 +47,20 @@
 .flexRowContent--mobile-social {
   padding-left: 20px;
 }
-.flexRowContent--row1-benefits{
+.flexRowContent--row1-benefits {
   display: flex;
   justify-content: center;
 }
 
-.flexRowContent--row2-benefits{
+.flexRowContent--row2-benefits {
   display: flex;
   justify-content: center;
 }
-.flexRowContent--row3-benefits{
+.flexRowContent--row3-benefits {
   display: flex;
   justify-content: center;
 }
+
 .flexRowContent--content{
   position: relative;
   top: 450px;
@@ -73,4 +74,8 @@
     margin-top: 10px;
     border-radius: 3px;
     align-items: center;
-  }
+}
+
+.flexCol--product-info {
+  width: 70% !important;
+}

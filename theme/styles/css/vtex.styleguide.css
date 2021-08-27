@@ -2,6 +2,9 @@
     background-color: #c0c1c3;
     border: 0;
     box-shadow: 0 0 2px #3a3a3a;
+    margin-top: 5px;
+    width: 65px;
+    height: 30px;
 }
 
 .container:hover{
