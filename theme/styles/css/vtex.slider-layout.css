@@ -1,3 +1,7 @@
 .sliderLayoutContainer--home-slider {
   margin-bottom: 2rem;
 }
+
+.slideChildrenContainer--carousel {
+  height: 450px;
+}

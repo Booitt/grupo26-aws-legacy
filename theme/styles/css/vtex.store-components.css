@@ -1,0 +1,15 @@
+.infoCardContainer--info-card-home1,
+.infoCardContainer--info-card-home2 {
+  width: 100%;
+  height: 100%;
+}
+
+.infoCardSubhead--info-card-home1,
+.infoCardSubhead--info-card-home2 {
+  font-size: 1.25rem;
+}
+
+.infoCardSubhead--info-card-home2,
+.infoCardHeadline--info-card-home2 {
+  color: #fff;
+}

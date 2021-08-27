@@ -1,0 +1,53 @@
+{
+  "responsive-layout.desktop#home-banner": {
+    "children": ["slider-layout#home-banner"]
+  },
+  "responsive-layout.mobile#home-banner": {
+    "children": ["slider-layout#home-banner"]
+  },
+
+  "slider-layout#home-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "navigationStep": 1,
+      "fullWidth": true
+    },
+    "children": ["info-card", "info-card#2"]
+  },
+
+  "info-card": {
+    "props": {
+      "id": "info-card-home1",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/home-slider01.jpg",
+      "headline": "Solicite seu exame prático grátis",
+      "subhead": "Eleve sua carreira. Seja Certificado AWS.",
+      "callToActionText": "Eu Quero",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home1",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#2": {
+    "props": {
+      "id": "info-card-home2",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/home-slider02.jpg",
+      "headline": "AWS Certification",
+      "subhead": "Valide seus conhecimentos técnicos para crescer na carreira e nos negócios.",
+      "callToActionText": "Agende um Exame",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home2",
+      "textAlignment": "center"
+    }
+  }
+}
