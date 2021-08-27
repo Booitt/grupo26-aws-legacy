@@ -57,8 +57,6 @@
   "flex-layout.row#mobile": {
     "children": [
       "image#logo",
-      "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {

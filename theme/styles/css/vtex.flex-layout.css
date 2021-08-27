@@ -4,6 +4,7 @@
 .flexRowContent--header-mobile{
     align-items: center;
     background-color: #232F3E;
+    justify-content: space-between;
 }
 .flexRowContent--flex-logo{
     margin-top: 5%;
@@ -18,4 +19,19 @@
 }
 .flexRowContent--flex-2{
     margin-top: 5%;
+}
+.flexRow--logo-phone{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.flexColChild--logo-phone-col, .flexColChild--form-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.flexColChild--form-desktop{
+   position: relative;
+   right: -30%;
+   width: 400px;
 }
