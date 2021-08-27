@@ -1,6 +1,11 @@
+
 .cartIcon{
     color: #EC7211;
 }
 .openIconContainer{
     margin-right: 20px;
+}
+.minicartSummary--minicart-checkout-footer{
+    border-top: 1px solid #c0c1c3;
+    font-family: "Noto Sans", sans-serif;
 }
