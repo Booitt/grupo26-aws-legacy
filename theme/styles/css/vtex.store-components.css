@@ -1,4 +1,9 @@
-<<<<<<< HEAD
+.imageElement--logoAWS {
+  max-width: 500px;
+}
+.imageElement--logo-phone-img {
+  max-width: 240px;
+}
 .infoCardContainer--info-card-home1,
 .infoCardContainer--info-card-home2 {
   width: 100%;
@@ -14,11 +19,3 @@
 .infoCardHeadline--info-card-home2 {
   color: #fff;
 }
-=======
-.imageElement--logoAWS{
-    max-width: 500px;
-}
-.imageElement--logo-phone-img{
-    max-width: 240px;
-}
->>>>>>> main
