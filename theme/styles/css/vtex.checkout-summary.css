@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+.summaryItemContainer{
+    padding: 0;
+}
+.summarySmallDisclaimer{
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+}
+.minicartCheckoutButton{
+    font-family: "Noto Sans", sans-serif;
+}
