@@ -10,7 +10,8 @@
     "props": {
       "text": "## Our Products",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "textPosition": "CENTER",
+      "blockClass": "slider-title"
     }
   },
   "responsive-layout.phone#home-slider": {

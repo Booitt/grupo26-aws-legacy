@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
 .menuContainer--footer-menu .styledLinkContainer {
   margin: 0.5rem 20px;
 }
 .menuContainer--footer-menu .styledLinkContent {
   color: #fff;
   /* font-size: 0.8rem; */
+}
+.styledLinkContent--learn-menu{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: 36px;
+  margin: 50px;
+}
+.menuItem--learn-menu{
+  height:fit-content;
+  width: fit-content;
 }

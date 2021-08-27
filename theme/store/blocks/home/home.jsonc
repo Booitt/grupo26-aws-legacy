@@ -1,13 +1,14 @@
 {
   "store.home": {
     "blocks": [
-      "responsive-layout.desktop#home-banner",
-      "responsive-layout.mobile#home-banner",
+      "responsive-layout.desktop#banner-home",
+      "responsive-layout.phone#banner-home",
       "responsive-layout.desktop",
       "responsive-layout.tablet",
       "responsive-layout.phone",
       "responsive-layout.desktop#home-slider",
-      "responsive-layout.phone#home-slider"
+      "responsive-layout.phone#home-slider",
+      "responsive-layout.desktop#benefits"
     ]
   }
 }

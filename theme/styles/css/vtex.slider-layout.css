@@ -4,11 +4,6 @@
   padding-right: 40px;
   box-sizing: border-box;
 }
-
-.slideChildrenContainer--carousel {
-  height: 450px;
-}
-
 .caretIcon--home-slider{
   color: #3f3f40; 
-
+}
