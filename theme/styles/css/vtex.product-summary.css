@@ -1,0 +1,21 @@
+.container  {
+  background: #232F3E;
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.productNameContainer, .price_sellingPriceContainer {
+  color: white;
+}
+
+.brandName {
+  font-size: 1.5rem;
+}
+
+.price_sellingPrice {
+  font-size: 2rem;
+}
+
+.element--home-slider {
+  justify-content: space-between;
+}

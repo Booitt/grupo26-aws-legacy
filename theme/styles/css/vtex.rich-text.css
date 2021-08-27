@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
 .paragraph--form-text {
@@ -36,3 +37,9 @@
     width: 272px;
     font-size: 30px;
 }
+.paragraph--footer-copyright {
+  color: #727273;
+  font-size: 0.75rem;
+  margin-top: 0;
+}
+
