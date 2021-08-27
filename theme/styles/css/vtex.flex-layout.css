@@ -52,3 +52,10 @@
 .flexRow--slider-form-border {
   background-color: #fff;
 }
+.flexRowContent--productDetailMinicart{
+    padding: 10px 10px 0 10px;
+    box-shadow: 0 0 4px #414040;
+    margin-top: 10px;
+    border-radius: 3px;
+    align-items: center;
+  }

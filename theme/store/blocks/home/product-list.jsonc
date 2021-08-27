@@ -125,7 +125,8 @@
       "paddingBottom": "6",
       "paddingTop": "5",
       "colSizing": "auto",
-      "preserveLayoutOnMobile": "true"
+      "preserveLayoutOnMobile": "true",
+      "blockClass": "productDetailMinicart"
     }
   },
   "flex-layout.col#image.mobile": {
