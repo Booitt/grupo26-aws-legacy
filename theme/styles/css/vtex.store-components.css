@@ -30,4 +30,20 @@
   width: 50%;
   margin: 0 auto;
 }
-
+.infoCardHeadline--info-card-banner{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFF;
+}
+.infoCardSubhead--info-card-banner{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFF;
+}
+.infoCardContainer--info-card-banner{
+  position: relative;
+  bottom: 275px;
+  border: none;
+}

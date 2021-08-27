@@ -1,5 +1,35 @@
 {
-  "responsive-layout.desktop#banner-home": {
+  "responsive-layout.desktop#slider":{
+    "children": ["slider-layout#banner-desktop"]
+  },
+  "slider-layout#banner-desktop": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "slider-desktop"
+    },
+    "children": ["responsive-layout.desktop#banner-home1","responsive-layout.desktop#banner-home2" ]
+  },
+  "responsive-layout.desktop#banner-home2": {
+    "children": ["image#desktop-banner", "info-card#desktop-banner"]
+  },
+  "info-card#desktop-banner": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "headline": "AWS certification",
+      "subhead": "Validate technical skills and cloud expertise to grow your carrer and business",
+      "callToActionText": "Book an exam",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-banner",
+      "textAlignment": "center"
+    }
+  },
+  "responsive-layout.desktop#banner-home1": {
     "children": [
       "image#desktop-banner",
       "rich-text#banner1-home",
