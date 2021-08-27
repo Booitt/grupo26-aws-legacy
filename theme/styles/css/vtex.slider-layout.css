@@ -1,11 +1,14 @@
 .sliderLayoutContainer--home-slider {
   margin-bottom: 2rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
 }
 
 .slideChildrenContainer--carousel {
   height: 450px;
 }
 
-.caretIcon {
-  color: #E47911;
-}
+.caretIcon--home-slider{
+  color: #3f3f40; 
+
