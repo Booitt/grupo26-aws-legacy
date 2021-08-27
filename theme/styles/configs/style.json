@@ -242,7 +242,7 @@
     "hover-on": {
       "action-primary": "#ffffff",
       "action-secondary": "#0F3E99",
-      "emphasis": "#ffffff",
+      "emphasis": "#232F3E",
       "success": "#ffffff",
       "success--faded": "#3f3f40",
       "danger": "#ffffff",
