@@ -19,6 +19,7 @@
 }
 .flexRowContent--flex-2{
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 .flexRow--logo-phone{
     margin-top: 10%;
@@ -28,10 +29,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+.flexColChild--form-mobile{
+    margin-bottom: 10%;
 }
 .flexColChild--form-desktop{
    position: relative;
    right: -30%;
    width: 400px;
+}
+.flexRowContent--copyright{
+    margin-top: 2%;
 }
