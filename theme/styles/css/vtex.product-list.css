@@ -1,3 +1,25 @@
-.deleteIcon{
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+.deleteIcon,  .productBrandName{
     color: #000000;
+}
+
+.deleteIcon:hover{
+    color: #6b6b6b;
+}
+
+.productBrandName, .productName, .price{
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 1px;
+}
+
+.productName{
+    font-weight: bold;
+}
+
+.price{
+    font-weight: 600;
+}
+
+.removeButton{
+    margin-left: 10px;
 }
