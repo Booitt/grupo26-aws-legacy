@@ -1,10 +1,10 @@
 const { handleCors, handleRequest, res } = require("./utils")
 
 exports.handler = async (event) => {
-	const { routeKey, pathParameters, body } = event
+	const { routeKey, pathParameters, body, headers } = event
 
 	if (routeKey.startsWith("OPTIONS")) {
-		return handleCors(event.headers)
+		return handleCors(headers)
 	}
 
 	try {
