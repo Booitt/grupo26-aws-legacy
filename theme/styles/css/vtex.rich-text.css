@@ -42,6 +42,73 @@
   font-size: 0.75rem;
   margin-top: 0;
 }
+.paragraph--banner1-text{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  position: absolute;
+  top: 15%;
+  font-size: 32px;
+  margin: 0;
+  right: 25%;
+  left: 25%;
+}
+.paragraph--banner2-text{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  position: absolute;
+  top: 25%;
+  font-size: 20px;
+  margin: 0;
+  right: 5%;
+  left: 5%;
+}
+.paragraph--banner1-text-phone{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  position: absolute;
+  top: 15%;
+  font-size: 16px;
+  margin: 0;
+  right: 5%;
+  left: 5%;
+}
+.paragraph--banner2-text-phone{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  position: absolute;
+  top: 30%;
+  font-size: 16px;
+  margin: 0;
+  right: 5%;
+  left: 5%;
+}
+.paragraph--benefits-title{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin: 30px 0;
+  font-size: 48px;
+}
+.heading--slider-title{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin: 30px 0;
+  font-size: 48px;
+}
+.paragraph--learn, .paragraph--pick, .paragraph--get, .paragraph--train{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: 36px;
+  margin: 50px; 
+}
+.paragraph--train{
+  position: relative;
+  left: -30px;
+}
 .paragraph--minicart-text{
   font-size: 20px;
   font-weight: 700;
@@ -49,6 +116,6 @@
   font-family: "Noto Sans", sans-serif;
 }
 
-/* .paragraph--slider-banner-text {
+.paragraph--slider-banner-text {
   margin: auto 10%;
-} */
+}

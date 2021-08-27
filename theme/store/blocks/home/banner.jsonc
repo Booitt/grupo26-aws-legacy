@@ -1,0 +1,54 @@
+{
+  "responsive-layout.desktop#banner-home": {
+    "children": [
+      "image#desktop-banner",
+      "rich-text#banner1-home",
+      "rich-text#banner2-home"
+    ]
+  },
+  "image#desktop-banner": {
+    "props": {
+      "blockClass": "img-banner",
+      "src": "assets/home/banner.jpg"
+    }
+  },
+  "rich-text#banner1-home": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Benefits for AWS Certified Individuals",
+      "blockClass": "banner1-text"
+    }
+  },
+  "rich-text#banner2-home": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Earn tangible benefits to help you showcase your achievements and advance your expertise. Once AWS Certified, you’ll be eligible for perks that can help you show off your achievements and keep learning.",
+      "blockClass": "banner2-text"
+    }
+  },
+  "responsive-layout.phone#banner-home": {
+    "children": [
+      "image#desktop-banner",
+      "rich-text#banner1-home-phone",
+      "rich-text#banner2-home-phone"
+    ]
+  },
+  "rich-text#banner1-home-phone": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Benefits for AWS Certified Individuals",
+      "blockClass": "banner1-text-phone"
+    }
+  },
+  "rich-text#banner2-home-phone": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Earn tangible benefits to help you showcase your achievements and advance your expertise. Once AWS Certified, you’ll be eligible for perks that can help you show off your achievements and keep learning.",
+      "blockClass": "banner2-text-phone"
+    }
+  }
+}
