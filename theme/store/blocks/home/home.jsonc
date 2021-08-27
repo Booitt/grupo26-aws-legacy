@@ -3,6 +3,9 @@
     "blocks": [
       "responsive-layout.desktop#home-banner",
       "responsive-layout.mobile#home-banner",
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone",
       "responsive-layout.desktop#home-slider",
       "responsive-layout.phone#home-slider"
     ]

@@ -13,3 +13,9 @@
 .infoCardHeadline--info-card-home2 {
   color: #fff;
 }
+.imageElement--logoAWS{
+    max-width: 500px;
+}
+.imageElement--logo-phone-img{
+    max-width: 240px;
+}
