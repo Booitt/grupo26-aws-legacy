@@ -13,7 +13,6 @@
       "textPosition": "CENTER"
     }
   },
-
   "responsive-layout.phone#home-slider": {
     "children": ["list-context.product-list#home-slider"]
   },
@@ -45,7 +44,7 @@
     "props": {
       "itemsPerPage": {
         "desktop": 4,
-        "tablet": 1,
+        "tablet": 2,
         "phone": 1
       },
       "showNavigationArrows": "desktopOnly",
