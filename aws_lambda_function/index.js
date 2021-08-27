@@ -1,15 +1,16 @@
 const { handleCors, handleRequest, res } = require("./utils")
 
 exports.handler = async (event) => {
-	const { routeKey, pathParameters, body, headers } = event
+	const { routeKey, pathParameters, queryStringParameters, body, headers } = event
 
 	if (routeKey.startsWith("OPTIONS")) {
 		return handleCors(headers)
 	}
 
 	try {
-		return await handleRequest(routeKey, body, pathParameters)
+		return await handleRequest(routeKey, body, pathParameters, queryStringParameters)
 	} catch (error) {
-		return res(400, { message: error })
+		console.log(error)
+		return res(500, { message: "Something went wrong." })
 	}
 }

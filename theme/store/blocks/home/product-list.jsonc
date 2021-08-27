@@ -46,8 +46,7 @@
   },
   "flex-layout.col#quantity.desktop": {
     "children": [
-      "flex-layout.row#quantity-selector.desktop",
-      "flex-layout.row#unit-price.desktop"
+      "flex-layout.row#quantity-selector.desktop"
     ],
     "props": {
       "marginLeft": "8"
@@ -65,13 +64,6 @@
   "flex-layout.row#quantity-selector.desktop": {
     "children": ["quantity-selector"],
     "props": {
-      "preventHorizontalStretch": "true"
-    }
-  },
-  "flex-layout.row#unit-price.desktop": {
-    "children": ["unit-price#desktop"],
-    "props": {
-      "marginTop": "3",
       "preventHorizontalStretch": "true"
     }
   },
@@ -139,7 +131,6 @@
     "children": [
       "flex-layout.row#top.mobile",
       "flex-layout.row#quantity-selector.mobile",
-      "flex-layout.row#unit-price.mobile",
       "flex-layout.row#price.mobile",
       "flex-layout.row#message.mobile"
     ],
@@ -160,14 +151,7 @@
   "flex-layout.row#quantity-selector.mobile": {
     "children": ["quantity-selector"],
     "props": {
-      "marginTop": "5",
       "preventHorizontalStretch": "true"
-    }
-  },
-  "flex-layout.row#unit-price.mobile": {
-    "children": ["unit-price"],
-    "props": {
-      "marginTop": "3"
     }
   },
   "flex-layout.row#price.mobile": {

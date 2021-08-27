@@ -31,7 +31,10 @@
     "blocks": ["product-list-content-mobile"]
   },
   "minicart-summary": {
-    "blocks": ["checkout-summary.compact#minicart"]
+    "blocks": ["checkout-summary.compact#minicart"],
+    "props":{
+      "blockClass": "minicart-checkout-footer"
+    }
   },
   "checkout-summary.compact#minicart": {
     "children": ["checkout-summary", "summary-totalizers#minicart"],
