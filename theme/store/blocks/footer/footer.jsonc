@@ -92,13 +92,13 @@
   "rich-text#footer-1": {
     "props": {
       "blockClass": "footer-copyright",
-      "text": "© 2021, Amazon Web Services, Inc. ou suas afiliadas."
+      "text": "© 2021, Amazon Web Services, Inc. or affiliates."
     }
   },
   "rich-text#footer-2": {
     "props": {
       "blockClass": "footer-copyright",
-      "text": "Todos os direitos reservados."
+      "text": "All rights reserved."
     }
   },
 
@@ -165,7 +165,8 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": false
+      "fullWidth": false,
+      "blockClass": "copyright"
     },
     "children": ["rich-text#footer-1", "rich-text#footer-2"]
   }
