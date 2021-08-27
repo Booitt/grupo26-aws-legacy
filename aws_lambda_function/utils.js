@@ -69,15 +69,16 @@ const handleRequest = async (
 		const { nome, email, telefone = "" } = JSON.parse(body)
 		if (!nome || !email) return res(400, { message: "Parâmetros inválidos." })
 		// Check if email is already registered
-		const lead = await dynamo
-			.get({
+		const {Items: [lead] } = await dynamo
+			.scan({
 				TableName: "leads",
-				Key: {
-					email,
-				},
+				FilterExpression: "email = :email",
+				ExpressionAttributeValues: {
+					":email": email
+				}
 			})
 			.promise()
-		if (Object.keys(lead).length)
+		if (lead)
 			return res(409, { message: "E-mail já cadastrado." })
 		await dynamo
 			.put({
@@ -98,23 +99,24 @@ const handleRequest = async (
 	if (routeKey === "PUT /convert") {
 		const { email } = queryStringParameters
 		if (!email) return res(400, { message: "Parâmetros inválidos." })
-		const lead = await dynamo
-			.get({
+		const {Items: [lead] } = await dynamo
+			.scan({
 				TableName: "leads",
-				Key: {
-					email,
-				},
+				FilterExpression: "email = :email",
+				ExpressionAttributeValues: {
+					":email": email
+				}
 			})
 			.promise()
-		if (!Object.keys(lead).length)
+		if (!lead)
 			return res(404, { message: "Lead não encontrada." })
-		if (lead.Item.clientSince)
+		if (lead.clientSince)
 			return res(409, { message: "Lead já atualizada anteriormente." })
 		await dynamo
 			.update({
 				TableName: "leads",
 				Key: {
-					email,
+					id: lead.id,
 				},
 				AttributeUpdates: {
 					clientSince: {
