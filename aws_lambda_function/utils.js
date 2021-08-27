@@ -2,7 +2,12 @@ const AWS = require("aws-sdk")
 const dynamo = new AWS.DynamoDB.DocumentClient()
 const { v4: uuid } = require("uuid")
 
-const handleRequest = async (routeKey, body, pathParameters) => {
+const handleRequest = async (
+	routeKey,
+	body,
+	pathParameters,
+	queryStringParameters
+) => {
 	if (routeKey === "GET /leads/{id}") {
 		const { id } = pathParameters
 		const lead = await dynamo
@@ -18,20 +23,12 @@ const handleRequest = async (routeKey, body, pathParameters) => {
 		return res(200, lead)
 	}
 
-	if (routeKey === "PUT /leads/{id}") { // Todo: conferir
+	if (routeKey === "PUT /leads/{id}") {
+		// Todo: conferir
 		const { id } = pathParameters
 		if (!id) return res(400, { message: "Parâmetros inválidos." })
-		const { nome, email, telefone = "" } = JSON.parse(body)
-		const lead = await dynamo
-			.get({
-				TableName: "leads",
-				Key: {
-					id,
-				},
-			})
-			.promise()
-		if (!Object.keys(lead).length)
-			return res(404, { message: "Lead não encontrada." })
+		const { nome, email, telefone } = JSON.parse(body)
+
 		await dynamo
 			.update({
 				TableName: "leads",
@@ -70,8 +67,18 @@ const handleRequest = async (routeKey, body, pathParameters) => {
 
 	if (routeKey === "POST /leads") {
 		const { nome, email, telefone = "" } = JSON.parse(body)
-		if (!nome || !email)
-			return res(400, { message: "Parâmetros inválidos." })
+		if (!nome || !email) return res(400, { message: "Parâmetros inválidos." })
+		// Check if email is already registered
+		const lead = await dynamo
+			.get({
+				TableName: "leads",
+				Key: {
+					email,
+				},
+			})
+			.promise()
+		if (Object.keys(lead).length)
+			return res(409, { message: "E-mail já cadastrado." })
 		await dynamo
 			.put({
 				TableName: "leads",
@@ -88,21 +95,21 @@ const handleRequest = async (routeKey, body, pathParameters) => {
 		return res(200, { message: "Lead criada!" })
 	}
 
-	if (routeKey === "PUT /convert/{email}") {
-		const { email } = pathParameters
+	if (routeKey === "PUT /convert") {
+		const { email } = queryStringParameters
 		if (!email) return res(400, { message: "Parâmetros inválidos." })
 		const lead = await dynamo
 			.get({
 				TableName: "leads",
 				Key: {
-					email
+					email,
 				},
 			})
 			.promise()
 		if (!Object.keys(lead).length)
 			return res(404, { message: "Lead não encontrada." })
 		if (lead.Item.clientSince)
-			return res(409, { message: "Essa lead já foi atualizada." })
+			return res(409, { message: "Lead já atualizada anteriormente." })
 		await dynamo
 			.update({
 				TableName: "leads",
@@ -123,15 +130,15 @@ const handleRequest = async (routeKey, body, pathParameters) => {
 }
 
 const handleCors = (headers) => {
-    const { origin, Origin} = headers
-    return {
-        statusCode: 200,
-        headers: {
-            "Access-Control-Allow-Headers": "Content-Type",
-            "Access-Control-Allow-Origin": origin || Origin,
-        },
-        body: JSON.stringify({ message: "Success" }),
-    }
+	const { origin, Origin } = headers
+	return {
+		statusCode: 200,
+		headers: {
+			"Access-Control-Allow-Headers": "Content-Type",
+			"Access-Control-Allow-Origin": origin || Origin,
+		},
+		body: JSON.stringify({ message: "Success" }),
+	}
 }
 
 const res = (
@@ -145,7 +152,7 @@ const res = (
 }
 
 module.exports = {
-    handleCors,
-    handleRequest,
-    res
+	handleCors,
+	handleRequest,
+	res,
 }
