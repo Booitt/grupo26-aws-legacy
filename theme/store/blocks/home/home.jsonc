@@ -8,7 +8,8 @@
       "responsive-layout.phone",
       "responsive-layout.desktop#home-slider",
       "responsive-layout.phone#home-slider",
-      "responsive-layout.desktop#benefits"
+      "responsive-layout.desktop#benefits",
+      "responsive-layout.phone#benefits"
     ]
   }
 }

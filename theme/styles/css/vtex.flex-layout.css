@@ -37,7 +37,6 @@
 }
 .flexColChild--form-desktop {
   position: relative;
-  /* right: -30%; */
   width: 400px;
 }
 .flexRowContent--copyright {
@@ -51,21 +50,19 @@
 .flexRowContent--row1-benefits{
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 240%;
-  right: 0.5%;
 }
 .flexRowContent--row2-benefits{
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 255%;
-  right: 0.5%;
 }
 .flexRowContent--row3-benefits{
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 275%;
-  right: 0.5%;
+}
+.flexRowContent--content{
+  position: relative;
+  top: 450px;
+}
+.flexRowContent--content-phone{
+  background-color: #232F3E;
 }

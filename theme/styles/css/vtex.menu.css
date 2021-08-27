@@ -14,7 +14,13 @@
   font-size: 36px;
   margin: 50px;
 }
-.menuItem--learn-menu{
-  height:fit-content;
-  width: fit-content;
+.styledLinkContent--learn-menu-phone{
+  justify-content: center;
+}
+.styledLinkContent--learn-menu-phone{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: 18px;
+  margin: 10px 10px 30px;
 }
