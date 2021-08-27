@@ -15,9 +15,7 @@
   },
 
   "responsive-layout.phone#home-slider": {
-    "children": [
-      "list-context.product-list#home-slider"
-    ]
+    "children": ["list-context.product-list#home-slider"]
   },
 
   "list-context.product-list#home-slider": {
