@@ -3,8 +3,7 @@
   "responsive-layout.desktop#benefits": {
     "children": [
       "rich-text#benefits-title",
-      "flex-layout.row#content",
-      "flex-layout.row#background"
+      "flex-layout.row#content"
     ]
   },
   "flex-layout.row#content": {
@@ -23,25 +22,27 @@
       "flex-layout.row#benefits1",
       "flex-layout.row#benefits2",
       "flex-layout.row#benefits3"
-    ]
-  },
-  "flex-layout.row#background": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "fullWidth": false,
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "benefits-background"
-    },
-    "children": ["image#background-benefits"]
-  },
-  "image#background-benefits": {
-    "props": {
-      "src": "assets/home/banner-benefits.svg",
-      "blockClass": "background-benefits"
+    ], "props":{
+        "blockClass": "col-content-desktop"
     }
   },
+//   "flex-layout.row#background": {
+//     "props": {
+//       "horizontalAlign": "center",
+//       "verticalAlign": "center",
+//       "fullWidth": false,
+//       "preventHorizontalStretch": true,
+//       "preventVerticalStretch": true,
+//       "blockClass": "benefits-background"
+//     },
+//     "children": ["image#background-benefits"]
+//   },
+//   "image#background-benefits": {
+//     "props": {
+//       "src": "assets/home/banner-benefits.svg",
+//       "blockClass": "background-benefits"
+//     }
+//   },
   "flex-layout.row#benefits1": {
     "props": {
       "horizontalAlign": "center",

@@ -60,10 +60,11 @@
   display: flex;
   justify-content: center;
 }
-
+.flexCol--col-content-desktop{
+  background-color: #232F3E;
+}
 .flexRowContent--content{
-  position: relative;
-  top: 450px;
+  margin-bottom: 50px;
 }
 .flexRowContent--content-phone{
   background-color: #232F3E;
@@ -75,7 +76,6 @@
     border-radius: 3px;
     align-items: center;
 }
-
 .flexCol--product-info {
   width: 70% !important;
 }
