@@ -42,7 +42,6 @@
   font-size: 0.75rem;
   margin-top: 0;
 }
-
 .paragraph--banner1-text{
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
@@ -110,6 +109,7 @@
   position: relative;
   left: -30px;
 }
+<<<<<<< HEAD
 .paragraph--benefits-title-phone{
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
@@ -124,3 +124,14 @@
   font-size: 18px;
   margin: 10px; 
 }
+=======
+.paragraph--minicart-text{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.paragraph--slider-banner-text {
+  margin: auto 10%;
+}
+>>>>>>> b931a4cd148aef6f41ea703935d28cc67a92c8fa

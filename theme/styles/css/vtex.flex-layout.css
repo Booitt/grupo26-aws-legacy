@@ -51,6 +51,7 @@
   display: flex;
   justify-content: center;
 }
+
 .flexRowContent--row2-benefits{
   display: flex;
   justify-content: center;
@@ -66,3 +67,10 @@
 .flexRowContent--content-phone{
   background-color: #232F3E;
 }
+.flexRowContent--productDetailMinicart{
+    padding: 10px 10px 0 10px;
+    box-shadow: 0 0 4px #414040;
+    margin-top: 10px;
+    border-radius: 3px;
+    align-items: center;
+  }
