@@ -1,43 +1,47 @@
-.flexRowContent--header{
-    background-color: #232F3E;
+.flexRowContent--header {
+  background-color: #232f3e;
 }
-.flexRowContent--header-mobile{
-    align-items: center;
-    background-color: #232F3E;
-    justify-content: space-between;
+.flexRowContent--header-mobile {
+  align-items: center;
+  background-color: #232f3e;
+  justify-content: space-between;
 }
-.flexRowContent--flex-logo{
-    margin-top: 5%;
-    margin-bottom: 30%;
+.flexRowContent--flex-logo {
+  margin-top: 5%;
+  margin-bottom: 30%;
 }
-.flexCol--margin{
-    width: 10%;
+.flexCol--margin {
+  width: 10%;
 }
-.flexRowContent--flex-1{
-    margin-top: 5%;
-    justify-content: space-around;
+.flexRowContent--flex-1 {
+  margin-top: 5%;
+  justify-content: space-around;
 }
-.flexRowContent--flex-2{
-    margin-top: 5%;
-    margin-bottom: 5%;
+.flexRowContent--flex-2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-.flexRow--logo-phone{
-    margin-top: 10%;
-    margin-bottom: 10%;
+.flexRow--logo-phone {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-.flexColChild--logo-phone-col, .flexColChild--form-mobile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.flexColChild--logo-phone-col,
+.flexColChild--form-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.flexColChild--form-mobile{
-    margin-bottom: 10%;
+.flexColChild--form-mobile {
+  margin-bottom: 10%;
 }
-.flexColChild--form-desktop{
-   position: relative;
-   right: -30%;
-   width: 400px;
+.flexColChild--form-desktop {
+  position: relative;
+  right: -30%;
+  width: 400px;
 }
-.flexRowContent--copyright{
-    margin-top: 2%;
+.flexRowContent--copyright {
+  margin-top: 2%;
+}
+.flexRow--slider-form-border {
+  background-color: #fff;
 }
