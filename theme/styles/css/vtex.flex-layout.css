@@ -40,4 +40,9 @@
 }
 .flexRowContent--copyright{
     margin-top: 2%;
+    padding-left: 20px;
+    margin-bottom: 2%;
+}
+.flexRowContent--mobile-social{
+    padding-left: 20px;
 }

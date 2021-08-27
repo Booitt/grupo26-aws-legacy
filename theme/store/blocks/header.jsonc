@@ -45,7 +45,8 @@
     "props": {
       "src": "assets/logo-header/logo-header.svg",
       "maxHeight": 50,
-      "link": "/"
+      "link": "/",
+      "blockClass": "logo-header"      
     }
   },
   "header-layout.mobile": {
