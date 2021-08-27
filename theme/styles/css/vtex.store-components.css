@@ -13,7 +13,7 @@
   max-width: 240px;
 }
 .imageElement--img-banner {
-  width: 100%;
+  width: 100vw;
   height: 300px;
   opacity: 0.9;
 }
@@ -22,7 +22,6 @@
   height: auto;
   margin: 0 20px 40px;
 }
-
 .imageElement--cover {
   object-fit: cover;
 }
