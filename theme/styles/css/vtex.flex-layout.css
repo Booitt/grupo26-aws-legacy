@@ -48,7 +48,7 @@
 .flexRowContent--mobile-social {
   padding-left: 20px;
 }
-.flexRowContent--row1-benefits{
+.flexRowContent--row1-benefits {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -56,25 +56,28 @@
   right: 0.5%;
 }
 
-.flexRowContent--row2-benefits{
+.flexRowContent--row2-benefits {
   display: flex;
   justify-content: center;
   position: absolute;
   top: 255%;
   right: 0.5%;
 }
-.flexRowContent--row3-benefits{
+.flexRowContent--row3-benefits {
   display: flex;
   justify-content: center;
   position: absolute;
   top: 275%;
   right: 0.5%;
 }
-
-.flexRowContent--productDetailMinicart{
+.flexRowContent--productDetailMinicart {
   padding: 10px 10px 0 10px;
   box-shadow: 0 0 4px #414040;
   margin: 10px 0 10px 0;
   border-radius: 3px;
   align-items: center;
+}
+
+.flexCol--product-info {
+  width: 70% !important;
 }
