@@ -124,7 +124,7 @@ const Formulario: React.FC = () => {
 								onChange={handleInput}
 								value={telefone}
 								id="telefone"
-								style={{ width: "14ch" }}
+								style={{ width: "16ch" }}
 							/>
 						</div>
 						{errMsg && <div className={classes.errMsg}>{errMsg}</div>}

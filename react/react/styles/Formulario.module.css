@@ -1,3 +1,6 @@
+.form * {
+    box-sizing: border-box;
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -11,7 +14,6 @@
 .inputContainer {
     display: flex;
     flex-direction: column;
-    width: 20rem;
     margin-bottom: 10px;
 }
 .label {
@@ -30,7 +32,6 @@
     outline: none;
 }
 .button {
-    box-sizing: border-box;
     background-color: #ec7211;
     color: white;
     width: 100%;
