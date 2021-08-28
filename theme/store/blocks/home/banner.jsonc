@@ -28,7 +28,7 @@
       "blockClass": "banner2-text"
     }
   },
-  "responsive-layout.phone#banner-home": {
+  "responsive-layout.mobile#banner-home": {
     "children": [
       "image#desktop-banner",
       "rich-text#banner1-home-phone",

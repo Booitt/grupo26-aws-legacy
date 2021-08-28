@@ -157,7 +157,7 @@
     "children": ["menu-item#learn"]
   },
   //phone
-  "responsive-layout.phone#benefits": {
+  "responsive-layout.mobile#benefits": {
     "children": ["flex-layout.row#content-phone"]
   },
   "flex-layout.row#content-phone": {
