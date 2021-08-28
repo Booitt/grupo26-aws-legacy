@@ -1,30 +1,48 @@
-{ //desktop
+{
+  //desktop
   "responsive-layout.desktop#benefits": {
     "children": [
       "rich-text#benefits-title",
-      "flex-layout.row#benefits1",
-      "flex-layout.row#benefits2",
-      "flex-layout.row#benefits3",
-      "flex-layout.row#background"
+      "flex-layout.row#content"
     ]
   },
-  "flex-layout.row#background": {
+  "flex-layout.row#content": {
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "fullWidth": false,
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "benefits-background"
+      "blockClass": "content"
     },
-    "children": ["image#background-benefits"]
+    "children": ["flex-layout.col#content"]
   },
-  "image#background-benefits": {
-    "props": {
-      "src": "assets/home/banner-benefits.svg",
-      "blockClass": "background-benefits"
+  "flex-layout.col#content": {
+    "children": [
+      "flex-layout.row#benefits1",
+      "flex-layout.row#benefits2",
+      "flex-layout.row#benefits3"
+    ], "props":{
+        "blockClass": "col-content-desktop"
     }
   },
+//   "flex-layout.row#background": {
+//     "props": {
+//       "horizontalAlign": "center",
+//       "verticalAlign": "center",
+//       "fullWidth": false,
+//       "preventHorizontalStretch": true,
+//       "preventVerticalStretch": true,
+//       "blockClass": "benefits-background"
+//     },
+//     "children": ["image#background-benefits"]
+//   },
+//   "image#background-benefits": {
+//     "props": {
+//       "src": "assets/home/banner-benefits.svg",
+//       "blockClass": "background-benefits"
+//     }
+//   },
   "flex-layout.row#benefits1": {
     "props": {
       "horizontalAlign": "center",
@@ -137,5 +155,90 @@
   },
   "flex-layout.col#benefits5": {
     "children": ["menu-item#learn"]
+  },
+  //phone
+  "responsive-layout.phone#benefits": {
+    "children": ["flex-layout.row#content-phone"]
+  },
+  "flex-layout.row#content-phone": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "content-phone"
+    },
+    "children": ["flex-layout.col#content-phone"]
+  },
+  "flex-layout.col#content-phone": {
+    "children": [
+      "rich-text#benefits-title-phone",
+      "rich-text#learn-phone",
+      "rich-text#pick-phone",
+      "rich-text#train-phone",
+      "rich-text#get-phone",
+      "menu-item#learn-phone"
+    ],
+    "props": {
+      "blockClass": "col-benefits-phone"
+    }
+  },
+  "rich-text#benefits-title-phone": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Benefits of AWS Training and Certification",
+      "blockClass": "benefits-title-phone"
+    }
+  },
+
+  "rich-text#learn-phone": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Learn at your own pace",
+      "blockClass": "learn-phone"
+    }
+  },
+  "rich-text#pick-phone": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Pick your training path",
+      "blockClass": "pick-phone"
+    }
+  },
+  "rich-text#train-phone": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Train with an AWS expert",
+      "blockClass": "train-phone"
+    }
+  },
+  "rich-text#get-phone": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Get AWS Certified",
+      "blockClass": "get-phone"
+    }
+  },
+  "menu-item#learn-phone": {
+    "props": {
+      "id": "menu-item-learn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Learn",
+        "text": "Learn more at About Us "
+      },
+      "blockClass": "learn-menu-phone"
+    }
   }
 }
