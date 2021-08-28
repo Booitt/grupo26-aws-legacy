@@ -1,8 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "responsive-layout.desktop#banner-home",
-      "responsive-layout.mobile#banner-home",
+      "slider-layout#home-banner",
       "responsive-layout.desktop#form-section",
       "responsive-layout.mobile#form-section",
       "responsive-layout.desktop#home-products-slider",

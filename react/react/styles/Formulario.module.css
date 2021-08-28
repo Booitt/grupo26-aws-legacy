@@ -32,7 +32,7 @@
     outline: none;
 }
 .button {
-    background-color: #ec7211;
+    background-color: #E47911;
     color: white;
     width: 100%;
     align-self: center;
@@ -46,7 +46,7 @@
 }
 
 .button:hover {
-    background-color: #ec7211dd;
+    background-color: #E47911dd;
 }
 
 .inputError {

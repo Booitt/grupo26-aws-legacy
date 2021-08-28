@@ -21,8 +21,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "About us",
-        "text": "About us "
+        "tagTitle": "Sobre nós",
+        "text": "Sobre nós "
       }
     }
   },
@@ -37,8 +37,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Privacy",
-        "text": "Privacy "
+        "tagTitle": "Privacidade",
+        "text": "Privacidade "
       }
     }
   },
@@ -53,8 +53,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Terms of use",
-        "text": "Terms of use "
+        "tagTitle": "Termos de uso",
+        "text": "Termos de uso "
       }
     }
   },
@@ -70,7 +70,7 @@
         "href": "#",
         "noFollow": false,
         "tagTitle": "Cookies",
-        "text": "Cookies preferences"
+        "text": "Preferências de cookies"
       }
     }
   },

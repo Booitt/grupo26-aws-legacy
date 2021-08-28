@@ -1,81 +1,81 @@
 .flexRowContent--header {
-  background-color: #232f3e;
+	background-color: #232f3e;
 }
 .flexRowContent--header-mobile {
-  align-items: center;
-  background-color: #232f3e;
-  justify-content: space-between;
+	align-items: center;
+	background-color: #232f3e;
+	justify-content: space-between;
 }
 .flexRowContent--flex-logo {
-  margin-top: 5%;
-  margin-bottom: 30%;
+	margin-top: 5%;
+	margin-bottom: 30%;
 }
 .flexCol--margin {
-  width: 10%;
+	width: 10%;
 }
 .flexRowContent--flex-1 {
-  margin-top: 5%;
-  justify-content: space-around;
+	margin-top: 5%;
+	justify-content: space-around;
 }
 .flexRowContent--flex-2 {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  justify-content: space-around;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	justify-content: space-around;
 }
 .flexRow--logo-phone {
-  margin-top: 10%;
-  margin-bottom: 10%;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 .flexColChild--logo-phone-col,
 .flexColChild--form-mobile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .flexColChild--form-mobile {
-  margin-bottom: 10%;
+	margin-bottom: 10%;
 }
 .flexColChild--form-desktop {
-  position: relative;
-  width: 400px;
+	position: relative;
+	width: 400px;
 }
 .flexRowContent--copyright {
-  margin-top: 2%;
-  padding-left: 20px;
-  margin-bottom: 2%;
+	margin-top: 2%;
+	padding-left: 20px;
+	margin-bottom: 2%;
 }
 .flexRowContent--mobile-social {
-  padding-left: 20px;
+	padding-left: 20px;
 }
 .flexRowContent--row1-benefits {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .flexRowContent--row2-benefits {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .flexRowContent--row3-benefits {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
-.flexCol--col-content-desktop{
-  background-color: #232F3E;
+.flexCol--col-content-desktop {
+	background-color: #232f3e;
 }
-.flexRowContent--content{
-  margin-bottom: 50px;
+.flexRowContent--content {
+	margin-bottom: 50px;
 }
-.flexRowContent--content-phone{
-  background-color: #232F3E;
+.flexRowContent--content-phone {
+	background-color: #232f3e;
 }
-.flexRowContent--productDetailMinicart{
-    padding: 10px 10px 0 10px;
-    box-shadow: 0 0 4px #414040;
-    margin-top: 10px;
-    border-radius: 3px;
-    align-items: center;
+.flexRowContent--productDetailMinicart {
+	padding: 10px 10px 0 10px;
+	box-shadow: 0 0 4px #414040;
+	margin-top: 10px;
+	border-radius: 3px;
+	align-items: center;
 }
 .flexCol--product-info {
-  width: 70% !important;
+	width: 70% !important;
 }
