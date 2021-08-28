@@ -97,15 +97,14 @@ const handleRequest = async (
 	}
 
 	if (routeKey === "PUT /convert") {
-		const { email, telefone } = queryStringParameters
-		if (!email && !telefone) return res(400, { message: "Parâmetros inválidos." })
+		const { email } = queryStringParameters
+		if (!email) return res(400, { message: "Parâmetros inválidos." })
 		const {Items: [lead] } = await dynamo
 			.scan({
 				TableName: "leads",
-				FilterExpression: "email = :email OR telefone = :telefone",
+				FilterExpression: "email = :email",
 				ExpressionAttributeValues: {
-					":email": email,
-					":telefone": telefone
+					":email": email
 				}
 			})
 			.promise()
