@@ -5,7 +5,11 @@
   "title": "Backend",
   "description": "Reference app for the Backend Course",
   "builders": {
-    "node": "6.x"
+    "node": "6.x",
+    "react": "3.x",
+    "docs": "0.x",
+    "admin": "0.x",
+    "messages": "1.x"
   },
   "scripts": {
     "prereleasy": "bash lint.sh"
@@ -49,6 +53,8 @@
       "name": "colossus-write-logs"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "vtex.styleguide": "9.x"
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
