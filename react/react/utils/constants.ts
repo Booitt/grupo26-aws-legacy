@@ -1,0 +1,1 @@
+export const LEADS_API_URL = 'https://7slql6j8i0.execute-api.us-east-2.amazonaws.com/leads'

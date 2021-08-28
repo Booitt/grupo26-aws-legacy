@@ -14,5 +14,7 @@
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "'": "file:material-ui/core/CircularProgress'"
+  }
 }
