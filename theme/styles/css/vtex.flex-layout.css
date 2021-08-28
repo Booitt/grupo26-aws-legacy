@@ -110,3 +110,12 @@
   width: 100vw;
   background-color: #FFF;
 }
+.flexCol--sobre-inicio-col-mobile{
+  width: 100vw;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+/* Fim */

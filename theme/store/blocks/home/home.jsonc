@@ -6,11 +6,8 @@
       "responsive-layout.mobile#form-section",
       "responsive-layout.desktop#home-products-slider",
       "responsive-layout.mobile#home-products-slider",
-      "spacer#vertical-5",
-      "rich-text#benefits-title",
-      "spacer#vertical-1",
-      "beneficios",
-      "spacer#vertical-5"
+      "responsive-layout.desktop#benefits",
+      "responsive-layout.phone#benefits"
     ]
   }
 }
