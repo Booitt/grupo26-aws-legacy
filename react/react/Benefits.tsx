@@ -12,10 +12,10 @@ const Benefits: React.FC = () => {
 			<div className={classes.container}>
 				<div className={classes.background}>
 					<div className={classes.content}>
-						<p>➤ Aprenda no seu ritmo</p>
-						<p>➤ Escolha seu caminho de treinamento</p>
-						<p>➤ Treine com um expert da AWS</p>
-						<p>➤ Obtenha um certificado AWS</p>
+						<a href="#">Aprenda no seu ritmo</a>
+						<a href="#">Escolha seu caminho de treinamento</a>
+						<a href="#">Treine com um expert da AWS</a>
+						<a href="#">Obtenha um certificado AWS</a>
 					</div>
 					<div className={classes.link}>
 						<a href="#">Saiba mais sobre a AWS</a>
