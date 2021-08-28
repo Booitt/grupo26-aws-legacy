@@ -1,5 +1,5 @@
 {
-    "store.custom#about": {
-        "path": "/about"
+    "store.custom#sobre": {
+        "path": "/sobre"
     }
 }

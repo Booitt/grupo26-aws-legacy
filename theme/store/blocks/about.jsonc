@@ -1,9 +1,193 @@
 {
-    "store.custom#about": {
-        "blocks": [
-       
-        ]
+  "store.custom#sobre": {
+    "blocks": [
+      "responsive-layout.desktop#sobre",
+      "responsive-layout.desktop#certificados",
+      "responsive-layout.desktop#benefits"
+    ]
+  },
+  "responsive-layout.desktop#sobre": {
+    "children": ["flex-layout.row#sobre-inicio"]
+  },
+  "flex-layout.row#sobre-inicio":{
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "sobre-inicio"
+    },
+    "children":["flex-layout.col#sobre-inicio"]
+  },
+   "flex-layout.col#sobre-inicio":{
+     "props":{
+       "blockClass": "sobre-inicio-col"
+     },
+    "children":[ "flex-layout.row#logo-title",
+      "flex-layout.row#section-one-sobre-text"]
+  },
+  "flex-layout.row#logo-title": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "sobre-title"
+    },
+    "children": [
+      "flex-layout.col#logo-sobre",
+      "flex-layout.col#section-one-title"
+    ]
+  },
+  "flex-layout.col#logo-sobre": {
+    "children": ["image#logo-sobre"]
+  },
+  "flex-layout.col#section-one-title": {
+    "children": ["rich-text#section-one-title"]
+  },
+  "image#logo-sobre": {
+    "props": {
+      "blockClass": "logo-sobre",
+      "src": "assets/home/logo-home.svg"
     }
-   
-    
+  },
+  "rich-text#section-one-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sobre os certificados AWS",
+      "blockClass": "section-one-title"
+    }
+  },
+  "flex-layout.row#section-one-sobre-text": {
+    "props": {
+      "horizontalAlign": "right",
+      "verticalAlign": "right",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "section-one-sobre-text"
+    },
+    "children": ["rich-text#section-one-sobre-text"]
+  },
+  "rich-text#section-one-sobre-text": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "center",
+      "text": "Você pode se beneficiar de uma grande variedade de insights de especialistas, recursos e programas à medida que avança em direção à obtenção da AWS Certification. Caso esteja começando agora ou esteja em busca de uma nova certificação, a AWS ajuda você a validar com eficácia a sua experiência na nuvem.",
+      "blockClass": "section-one-sobre-text"
+    }
+  },
+  "responsive-layout.desktop#certificados": {
+    "children": [
+      "flex-layout.row#certificados-title",
+      "flex-layout.row#certificados"
+    ]
+  },
+  "flex-layout.row#certificados-title": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "section-two-title"
+    },
+    "children": ["flex-layout.col#certificados-title"]
+  },
+  "flex-layout.col#certificados-title": {
+    "children": ["rich-text#certificados-title"]
+  },
+  "rich-text#certificados-title": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "Certificados AWS disponíveis",
+      "blockClass": "section-two-title"
+    }
+  },
+  "flex-layout.row#certificados": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "section-two"
+    },
+    "children": [
+      "flex-layout.col#tipos",
+      "flex-layout.col#certificados-logo",
+      "flex-layout.col#section-two-text"
+    ]
+  },
+  "flex-layout.col#tipos": {
+    "props": {
+      "blockClass": "col-tipos"
+    },
+    "children": [
+      "rich-text#professional",
+      "rich-text#associate",
+      "rich-text#fundational",
+      "rich-text#specialty"
+    ]
+  },
+  "rich-text#professional": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "Professional",
+      "blockClass": "text-col-certificates"
+    }
+  },
+  "rich-text#associate": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "Associate",
+      "blockClass": "text-col-certificates"
+    }
+  },
+  "rich-text#fundational": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "Fundational",
+      "blockClass": "text-col-certificates"
+    }
+  },
+  "rich-text#specialty": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "Specialty",
+      "blockClass": "text-col-certificates"
+    }
+  },
+  "flex-layout.col#certificados-logo": {
+    "props": {
+      "blockClass": "col-logo"
+    },
+    "children": ["image#logo-product"]
+  },
+  "image#logo-product": {
+    "props": {
+      "blockClass": "logo-product",
+      "src": "assets/sobre/product-image.svg"
+    }
+  },
+  "flex-layout.col#section-two-text": {
+    "props": {
+      "blockClass": "section-two-col-text"
+    },
+    "children": ["rich-text#section-two-text"]
+  },
+  "rich-text#section-two-text": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "center",
+      "text": "Você pode se beneficiar de uma grande variedade de insights de especialistas, recursos e programas à medida que avança em direção à obtenção da AWS Certification. Caso esteja começando agora ou esteja em busca de uma nova certificação, a AWS ajuda você a validar com eficácia a sua experiência na nuvem.",
+      "blockClass": "section-two-text"
+    }
+  }
 }
