@@ -158,7 +158,7 @@ Para obter uma cópia local instalada e funcionando, siga estas etapas simples.
    ```
 3. Crie um novo Workspace para começar a trabalhar
    ```sh
-   vtex using {{your-workspace-name}}
+   vtex use {{your-workspace-name}}
    ```
 
 
