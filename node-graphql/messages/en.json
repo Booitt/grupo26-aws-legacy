@@ -1,0 +1,8 @@
+{
+  "admin/test": "test",
+  "store/test": "test",
+  "admin-lead.navigation.label": "Leads",
+  "admin-lead.navigation.search.kws": "leads",
+  "admin-lead.navigation.insight": "Insights",
+  "admin-lead.navigation.management": "Management"
+}
