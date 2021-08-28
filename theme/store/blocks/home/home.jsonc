@@ -3,8 +3,8 @@
     "blocks": [
       "responsive-layout.desktop#banner-home",
       "responsive-layout.phone#banner-home",
-      "responsive-layout.desktop",
-      "responsive-layout.phone",
+      "responsive-layout.desktop#form-section",
+      "responsive-layout.mobile#form-section",
       "responsive-layout.desktop#home-slider",
       "responsive-layout.phone#home-slider",
       "responsive-layout.desktop#benefits",
