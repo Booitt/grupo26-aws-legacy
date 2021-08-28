@@ -20,7 +20,10 @@
   // UNIVERSAL
 	"list-context.product-list#home-products-slider": {
 		"blocks": ["product-summary.shelf#home-products-slider"],
-		"children": ["slider-layout#home-products-slider"]
+		"children": ["slider-layout#home-products-slider"],
+		"props": {
+			"maxItems": 15
+		}
 	},
 
 	"product-summary.shelf#home-products-slider": {
