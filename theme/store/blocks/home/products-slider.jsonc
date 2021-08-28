@@ -43,7 +43,7 @@
 
 	"add-to-cart-button#home-products-slider": {
 		"props": {
-			"text": "Escolher"
+			"text": "ADICIONAR AO CARRINHO"
 		}
 	},
 

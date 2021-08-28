@@ -50,32 +50,24 @@
 	},
 	"rich-text#learn": {
 		"props": {
-			"textAlignment": "CENTER",
-			"textPosition": "CENTER",
-			"text": "Aprenda no seu ritmo",
+			"text": "Treine com um expert da AWS",
 			"blockClass": "text-benefits"
 		}
 	},
 	"rich-text#pick": {
 		"props": {
-			"textAlignment": "CENTER",
-			"textPosition": "CENTER",
 			"text": "Escolha seu caminho de treinamento",
 			"blockClass": "text-benefits"
 		}
 	},
 	"rich-text#train": {
 		"props": {
-			"textAlignment": "CENTER",
-			"textPosition": "CENTER",
-			"text": "Treine com um expert da AWS",
+			"text": "Aprenda no seu ritmo",
 			"blockClass": "text-benefits"
 		}
 	},
 	"rich-text#get": {
 		"props": {
-			"textAlignment": "CENTER",
-			"textPosition": "CENTER",
 			"text": "Obtenha um certificado AWS",
 			"blockClass": "text-benefits"
 		}
@@ -112,8 +104,8 @@
 	},
 
 	//phone
-	"responsive-layout.phone#benefits": {
-		"children": ["flex-layout.row#content-phone"]
+	"responsive-layout.mobile#benefits": {
+		"children": ["flex-layout.row#content-phone", "spacer#vertical-3"]
 	},
 	"flex-layout.row#content-phone": {
 		"props": {

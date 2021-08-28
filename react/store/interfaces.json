@@ -2,9 +2,6 @@
   "formulario": {
     "component": "Formulario"
   },
-  "beneficios": {
-    "component": "Benefits"
-  },
   "spacer": {
     "component": "Spacer"
   }
