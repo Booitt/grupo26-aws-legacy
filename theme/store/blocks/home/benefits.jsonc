@@ -1,10 +1,7 @@
 {
   //desktop
   "responsive-layout.desktop#benefits": {
-    "children": [
-      "rich-text#benefits-title",
-      "flex-layout.row#content"
-    ]
+    "children": ["rich-text#benefits-title", "flex-layout.row#content"]
   },
   "flex-layout.row#content": {
     "props": {
@@ -20,48 +17,31 @@
   "flex-layout.col#content": {
     "children": [
       "flex-layout.row#benefits1",
-      "flex-layout.row#benefits2",
-      "flex-layout.row#benefits3"
-    ], "props":{
-        "blockClass": "col-content-desktop"
+      "flex-layout.row#benefits2"
+    ],
+    "props": {
+      "blockClass": "col-content-desktop"
     }
   },
-//   "flex-layout.row#background": {
-//     "props": {
-//       "horizontalAlign": "center",
-//       "verticalAlign": "center",
-//       "fullWidth": false,
-//       "preventHorizontalStretch": true,
-//       "preventVerticalStretch": true,
-//       "blockClass": "benefits-background"
-//     },
-//     "children": ["image#background-benefits"]
-//   },
-//   "image#background-benefits": {
-//     "props": {
-//       "src": "assets/home/banner-benefits.svg",
-//       "blockClass": "background-benefits"
-//     }
-//   },
   "flex-layout.row#benefits1": {
     "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "fullWidth": false,
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
+        "horizontalAlign": "center",
+        "verticalAlign": "center",
+        "fullWidth": false,
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
       "blockClass": "row1-benefits"
     },
     "children": ["flex-layout.col#benefits1", "flex-layout.col#benefits2"]
   },
   "flex-layout.col#benefits1": {
-    "children": ["rich-text#learn"],
+    "children": ["rich-text#learn", "rich-text#train"],
     "props": {
-      "blockClass": "col1-benefits"
+      "blockClass": "row1-benefits"
     }
   },
   "flex-layout.col#benefits2": {
-    "children": ["rich-text#pick"]
+    "children": ["rich-text#pick", "rich-text#get"]
   },
   "rich-text#benefits-title": {
     "props": {
@@ -71,18 +51,12 @@
       "blockClass": "benefits-title"
     }
   },
-  "flex-layout.row#texts-line1": {
-    "props": {
-      "blockClass": "texts-line1"
-    },
-    "children": ["rich-text#pick"]
-  },
   "rich-text#learn": {
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Learn at your own pace",
-      "blockClass": "learn"
+      "blockClass": "text-benefits"
     }
   },
   "rich-text#pick": {
@@ -90,7 +64,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Pick your training path",
-      "blockClass": "pick"
+      "blockClass": "text-benefits"
     }
   },
   "rich-text#train": {
@@ -98,7 +72,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Train with an AWS expert",
-      "blockClass": "train"
+      "blockClass": "text-benefits"
     }
   },
   "rich-text#get": {
@@ -106,7 +80,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Get AWS Certified",
-      "blockClass": "get"
+      "blockClass": "text-benefits"
     }
   },
   "menu-item#learn": {
@@ -134,28 +108,12 @@
       "preventVerticalStretch": true,
       "blockClass": "row2-benefits"
     },
-    "children": ["flex-layout.col#benefits3", "flex-layout.col#benefits4"]
+    "children": ["flex-layout.col#benefits3"]
   },
   "flex-layout.col#benefits3": {
-    "children": ["rich-text#train"]
-  },
-  "flex-layout.col#benefits4": {
-    "children": ["rich-text#get"]
-  },
-  "flex-layout.row#benefits3": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "fullWidth": false,
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "row3-benefits"
-    },
-    "children": ["flex-layout.col#benefits5"]
-  },
-  "flex-layout.col#benefits5": {
     "children": ["menu-item#learn"]
   },
+
   //phone
   "responsive-layout.phone#benefits": {
     "children": ["flex-layout.row#content-phone"]
@@ -198,7 +156,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Learn at your own pace",
-      "blockClass": "learn-phone"
+      "blockClass": "text-benefits-phone"
     }
   },
   "rich-text#pick-phone": {
@@ -206,7 +164,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Pick your training path",
-      "blockClass": "pick-phone"
+      "blockClass": "text-benefits-phone"
     }
   },
   "rich-text#train-phone": {
@@ -214,7 +172,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Train with an AWS expert",
-      "blockClass": "train-phone"
+      "blockClass": "text-benefits-phone"
     }
   },
   "rich-text#get-phone": {
@@ -222,7 +180,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Get AWS Certified",
-      "blockClass": "get-phone"
+      "blockClass": "text-benefits-phone"
     }
   },
   "menu-item#learn-phone": {

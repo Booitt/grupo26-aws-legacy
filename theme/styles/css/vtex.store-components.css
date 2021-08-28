@@ -46,3 +46,11 @@
   bottom: 275px;
   border: none;
 }
+/* Sobre inicio*/
+
+.imageElement--logo-sobre{
+  width: 300px;
+}
+.imageElement--logo-product{
+  width: 300px;
+}
