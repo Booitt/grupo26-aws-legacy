@@ -1,0 +1,105 @@
+{
+  "responsive-layout.desktop#benefits": {
+    "children": ["rich-text#benefits-title", "flex-layout.row#content"]
+  },
+  "flex-layout.row#content": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": false,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "content"
+    },
+    "children": ["flex-layout.col#content"]
+  },
+  "flex-layout.col#content": {
+    "children": ["flex-layout.row#benefits1", "flex-layout.row#benefits2"],
+    "props": {
+      "blockClass": "col-content-desktop"
+    }
+  },
+  "flex-layout.row#benefits1": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": false,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "row1-benefits"
+    },
+    "children": ["flex-layout.col#benefits1", "flex-layout.col#benefits2"]
+  },
+  "flex-layout.col#benefits1": {
+    "children": ["rich-text#learn", "rich-text#train"],
+    "props": {
+      "blockClass": "row1-benefits"
+    }
+  },
+  "flex-layout.col#benefits2": {
+    "children": ["rich-text#pick", "rich-text#get"]
+  },
+  "rich-text#benefits-title": {
+    "props": {
+      "text": "## Benefícios da AWS Training and Certification",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "benefits-title"
+    }
+  },
+  "rich-text#learn": {
+    "props": {
+      "text": "Treine com um expert da AWS",
+      "blockClass": "text-benefits"
+    }
+  },
+  "rich-text#pick": {
+    "props": {
+      "text": "Escolha seu caminho de treinamento",
+      "blockClass": "text-benefits"
+    }
+  },
+  "rich-text#train": {
+    "props": {
+      "text": "Aprenda no seu ritmo",
+      "blockClass": "text-benefits"
+    }
+  },
+  "rich-text#get": {
+    "props": {
+      "text": "Obtenha um certificado AWS",
+      "blockClass": "text-benefits"
+    }
+  },
+
+  "flex-layout.row#benefits2": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": false,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "row2-benefits"
+    },
+    "children": ["flex-layout.col#benefits3"]
+  },
+  "flex-layout.col#benefits3": {
+    "children": ["menu-item#learn"]
+  },
+  "menu-item#learn": {
+    "props": {
+      "id": "menu-item-learn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sobre",
+        "noFollow": false,
+        "tagTitle": "Learn",
+        "text": "Saiba mais sobre a AWS"
+      },
+      "blockClass": "learn-menu"
+    }
+  }
+}

@@ -14,6 +14,13 @@
   font-size: 1.8rem;
   margin: 50px;
 }
+.styledLinkContent--learn-menu-tablet{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: 1.25rem;
+  margin: 10px;
+}
 .styledLinkContent--learn-menu-phone{
   justify-content: center;
 }

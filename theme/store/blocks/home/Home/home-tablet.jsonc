@@ -1,0 +1,10 @@
+{
+  "store.home#tablet": {
+    "blocks": [
+      "slider-layout#home-banner",
+      "responsive-layout.tablet#form-section",
+      "responsive-layout.mobile#home-products-slider",
+      "responsive-layout.tablet#benefits"
+    ]
+  }
+}
