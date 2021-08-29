@@ -1,0 +1,19 @@
+[
+	{
+		/* Automático */
+		"id": "string",
+		/* Obrigatório */
+		"nome": "string",
+		/* Obrigatório */
+		"email": "string",
+		/* Opcional */
+		"telefone": "string",
+		/* Automático, criado no momento da requisição */
+		"prospectSince": "date",
+		/* Ao criar a lead, essa propriedade é automaticamente false, 
+		para facilitar um filtro posteriormente. No momento em que 
+		o cliente faz uma compra pelo mesmo e-mail da lead, 
+		essa propriedade é atualazada com a data do momento da compra. */
+		"clientSince": "date | false"
+	}
+]

@@ -1,81 +1,107 @@
+/* Header */
 .flexRowContent--header {
-  background-color: #232f3e;
+	background-color: #232f3e;
 }
 .flexRowContent--header-mobile {
-  align-items: center;
-  background-color: #232f3e;
-  justify-content: space-between;
+	align-items: center;
+	background-color: #232f3e;
+	justify-content: space-between;
 }
-.flexRowContent--flex-logo {
-  margin-top: 5%;
-  margin-bottom: 30%;
-}
-.flexCol--margin {
-  width: 10%;
-}
-.flexRowContent--flex-1 {
-  margin-top: 5%;
-  justify-content: space-around;
-}
-.flexRowContent--flex-2 {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  justify-content: space-around;
-}
-.flexRow--logo-phone {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-.flexColChild--logo-phone-col,
-.flexColChild--form-mobile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.flexColChild--form-mobile {
-  margin-bottom: 10%;
-}
-.flexColChild--form-desktop {
-  position: relative;
-  width: 400px;
-}
+/* Fim */
+
+/* Footer */
 .flexRowContent--copyright {
-  margin-top: 2%;
-  padding-left: 20px;
-  margin-bottom: 2%;
+	margin-top: 2%;
+	padding-left: 20px;
+	margin-bottom: 2%;
 }
 .flexRowContent--mobile-social {
-  padding-left: 20px;
+	padding-left: 20px;
 }
-.flexRowContent--row1-benefits {
-  display: flex;
-  justify-content: center;
-}
+/* Fim */
 
-.flexRowContent--row2-benefits {
-  display: flex;
-  justify-content: center;
+/* Sessão beneficios */
+.flexRowContent--content {
+  margin-bottom: 70px;
 }
-.flexRowContent--row3-benefits {
-  display: flex;
-  justify-content: center;
+.flexRowContent--content-phone {
+  background-color: #232f3e;
 }
-.flexCol--col-content-desktop{
-  background-color: #232F3E;
+.flexCol--col-content-desktop {
+  font-size: 30px;
+  background-color: #232f3e;
+  padding: 50px 3rem;
+  width: 100%;
 }
-.flexRowContent--content{
-  margin-bottom: 50px;
+.flexRowContent--row1-benefits{
+  justify-content: space-around;
+  margin-top: 20px;
 }
-.flexRowContent--content-phone{
-  background-color: #232F3E;
+.flexRow--row2-benefits{
+  margin-top: 30px;
 }
-.flexRowContent--productDetailMinicart{
-    padding: 10px 10px 0 10px;
-    box-shadow: 0 0 4px #414040;
-    margin-top: 10px;
-    border-radius: 3px;
-    align-items: center;
+/* Fim*/
+
+/* Product List */
+.flexRowContent--productDetailMinicart {
+  padding: 10px 10px 0 10px;
+  box-shadow: 0 0 4px #414040;
+  margin-top: 10px;
+  border-radius: 3px;
+  align-items: center;
 }
+/* Fim */
+
+/* Product */
 .flexCol--product-info {
-  width: 70% !important;
+	width: 70% !important;
+}
+/* Fim */
+
+/* Sessão sobre */
+.flexRowContent--sobre-title {
+  margin: 70px 0;
+  justify-content: space-around;
+}
+.flexRowContent--section-two-title {
+  margin-bottom: 70px;
+}
+.flexRow--section-two {
+  margin: 0 40px 70px;
+}
+.flexRowContent--section-two {
+  justify-content: space-around;
+}
+.flexRow--section-one-sobre-text {
+  margin: 0 0 70px;
+}
+.flexColChild--col-logo {
+  background-color: #fff;
+}
+.flexColChild--section-two-col-text {
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.flexColChild--sobre-inicio-col{
+  width: 100vw;
+  background-color: #FFF;
+}
+.flexCol--sobre-inicio-col-mobile{
+  width: 100vw;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+/* Fim */
+
+/* Home */
+.flexRow--row-form{
+  margin: 0 50px;
+}
+.flexRow--form-mobile{
+  margin: 0 32px;
 }

@@ -1,23 +1,26 @@
 {
-  // DESKTOP
+	// DESKTOP
 	"responsive-layout.desktop#home-products-slider": {
-		"children": ["rich-text#home-products-slider",
-			"list-context.product-list#home-products-slider"]
+		"children": [
+			"rich-text#home-products-slider",
+			"spacer#vertical-3",
+			"list-context.product-list#home-products-slider"
+		]
 	},
 	"rich-text#home-products-slider": {
 		"props": {
-			"text": "## Nossos produtos",
+			"text": "## Confira nossos treinamentos",
 			"textAlignment": "CENTER",
 			"textPosition": "CENTER",
 			"blockClass": "slider-title"
 		}
 	},
-  // MOBILE
+	// MOBILE
 	"responsive-layout.mobile#home-products-slider": {
 		"children": ["list-context.product-list#home-products-slider"]
 	},
 
-  // UNIVERSAL
+	// UNIVERSAL
 	"list-context.product-list#home-products-slider": {
 		"blocks": ["product-summary.shelf#home-products-slider"],
 		"children": ["slider-layout#home-products-slider"],
@@ -40,7 +43,7 @@
 
 	"add-to-cart-button#home-products-slider": {
 		"props": {
-			"text": "Buy now"
+			"text": "ADICIONAR AO CARRINHO"
 		}
 	},
 

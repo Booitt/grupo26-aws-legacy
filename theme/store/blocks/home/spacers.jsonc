@@ -1,0 +1,7 @@
+{
+    "spacer#vertical-3": {
+        "props": {
+            "verticalSpace": "3rem"
+        }
+    }
+}

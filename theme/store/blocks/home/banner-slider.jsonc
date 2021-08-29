@@ -1,0 +1,51 @@
+{
+	"slider-layout#home-banner": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "desktopOnly",
+			"showPaginationDots": "never",
+			"blockClass": "carousel",
+			"navigationStep": 1,
+			"fullWidth": true,
+			"autoplay": {
+				"timeout": 8000,
+				"stopOnHover": true
+			},
+			"slideTransition": { "speed": 1500, "delay": 0, "timing": "" }
+		},
+		"children": ["info-card", "info-card#2"]
+	},
+	"info-card": {
+		"props": {
+			"id": "info-card-home1",
+			"isFullModeStyle": true,
+			"textPosition": "center",
+			"imageUrl": "assets/home/banner-slider/home-slider03.png",
+			"headline": "Capacite suas equipes com treinamento e certificação da AWS",
+			"subhead": "Crie fluência na nuvem em sua organização para acelerar e escalonar a transformação da nuvem",
+			"callToActionText": "Saiba mais",
+			"callToActionUrl": "/sale/d",
+			"blockClass": "home-banner-slider",
+			"textAlignment": "center"
+		}
+	},
+	"info-card#2": {
+		"props": {
+			"id": "info-card-home2",
+			"isFullModeStyle": true,
+			"textPosition": "center",
+			"imageUrl": "assets/home/banner-slider/home-slider02.jpg",
+			"headline": "Certificação AWS",
+			"subhead": "Valide seus conhecimentos técnicos e experiência com a nuvem para crescer na carreira e nos negócios.",
+			"callToActionText": "Saiba mais",
+			"callToActionUrl": "/sale/d",
+			"blockClass": "home-banner-slider",
+			"textAlignment": "center"
+		}
+	}
+}

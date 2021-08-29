@@ -1,26 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-.paragraph--form-text {
-  font-size: 48px;
-  width: 466px;
-  margin: 0;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
-}
-.paragraph--banner-text {
-  max-width: 598px;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  margin: 0;
-  position: relative;
-  /* left: -20%; */
-}
 .paragraph--text-mobile1,
 .paragraph--text-mobile2 {
   margin: 0;
   width: 217px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   font-size: 22px;
   text-align: left;
@@ -30,7 +14,7 @@
 }
 .paragraph--text-form-mobile {
   margin: 20% 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   font-size: 22px;
   text-align: center;
@@ -42,10 +26,10 @@
   font-size: 0.75rem;
   margin-top: 0;
 }
-.paragraph--banner1-text{
-  font-family: "Noto Sans", sans-serif;
+.paragraph--banner1-text {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 100px;
   font-size: 32px;
@@ -53,10 +37,10 @@
   right: 25%;
   left: 25%;
 }
-.paragraph--banner2-text{
-  font-family: "Noto Sans", sans-serif;
+.paragraph--banner2-text {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 200px;
   font-size: 20px;
@@ -64,10 +48,10 @@
   right: 5%;
   left: 5%;
 }
-.paragraph--banner1-text-phone{
-  font-family: "Noto Sans", sans-serif;
+.paragraph--banner1-text-phone {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 100px;
   font-size: 16px;
@@ -75,10 +59,10 @@
   right: 5%;
   left: 5%;
 }
-.paragraph--banner2-text-phone{
-  font-family: "Noto Sans", sans-serif;
+.paragraph--banner2-text-phone {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 175px;
   font-size: 16px;
@@ -86,50 +70,100 @@
   right: 5%;
   left: 5%;
 }
-.paragraph--benefits-title{
-  font-family: "Noto Sans", sans-serif;
+
+.heading--slider-title {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   margin: 30px 0;
   font-size: 48px;
 }
-.heading--slider-title{
-  font-family: "Noto Sans", sans-serif;
+
+/*Inicio benefits session*/
+.paragraph--benefits-title {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   margin: 30px 0;
   font-size: 48px;
 }
-.paragraph--learn, .paragraph--pick, .paragraph--get, .paragraph--train{
-  font-family: "Noto Sans", sans-serif;
+.paragraph--text-benefits {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
-  color: #FFF;
-  font-size: 36px;
-  margin: 50px; 
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 1.5rem;
 }
-.paragraph--train{
-  position: relative;
-  left: -30px;
-}
-.paragraph--benefits-title-phone{
-  font-family: "Noto Sans", sans-serif;
+.paragraph--benefits-title-phone {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   font-size: 28px;
   width: 272px;
-  color: #FFF;
+  color: #fff;
 }
-.paragraph--learn-phone, .paragraph--pick-phone, .paragraph--get-phone, .paragraph--train-phone{
-  font-family: "Noto Sans", sans-serif;
+.paragraph--text-benefits-phone {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
-  margin: 10px; 
+  margin: 10px;
 }
-.paragraph--minicart-text{
+/* Fim */
+
+.paragraph--minicart-text {
   font-size: 20px;
   font-weight: 700;
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .paragraph--slider-banner-text {
   margin: auto 10%;
 }
+
+/* Sessão sobre inicio */
+.paragraph--section-one-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+}
+.paragraph--section-two-title{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 50px 0 0;
+}
+.paragraph--section-one-sobre-text {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  width: 718px;
+  position: relative;
+  right: 50px;
+}
+.paragraph--text-col-certificates {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+}
+.paragraph--section-two-text {
+  width: 555px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+.paragraph--section-one-title-mobile{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 30px 0;
+}
+.paragraph--section-one-sobre-text-mobile{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+/* Fim */

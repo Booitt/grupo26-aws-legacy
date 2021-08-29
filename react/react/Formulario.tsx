@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import axios from "axios"
 import { CircularProgress } from "@material-ui/core"
 import classes from "./styles/Formulario.module.css"
@@ -16,6 +16,11 @@ const Formulario: React.FC = () => {
 	const [inputError, setInputError] = useState(initial)
 	const [sending, setSending] = useState(false)
 	const [showSucessMsg, setShowSuccessMsg] = useState(false)
+	const [display, setDisplay] = useState('none')
+
+	useEffect(() => {
+		setDisplay('initial')
+	}, [])
 
 	const { nome, email, telefone } = inputs
 	const errMsg = Object.values(inputError).filter((v) => v)
@@ -73,7 +78,7 @@ const Formulario: React.FC = () => {
 			})
 	}
 	return (
-		<div style={{ width: "100%", margin: "auto" }}>
+		<div style={{ width: "100%", margin: "auto", display }}>
 			<form className={classes.form} onSubmit={handleSubmit}>
 				{!sending && !showSucessMsg && (
 					<>

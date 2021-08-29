@@ -1,10 +1,11 @@
 .sliderLayoutContainer--home-slider {
-  margin-bottom: 2rem;
-  padding-left: 40px;
-  padding-right: 40px;
-  box-sizing: border-box;
+	margin-bottom: 2rem;
+	padding-left: 40px;
+	padding-right: 40px;
+	box-sizing: border-box;
 }
-.caretIcon--home-slider{
-  color: #3f3f40; 
-  margin: .5rem;
+
+.caretIcon {
+	color: #e47911;
+	margin: 0.5rem;
 }

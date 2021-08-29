@@ -24,11 +24,19 @@ const handleRequest = async (
 	}
 
 	if (routeKey === "PUT /leads/{id}") {
-		// Todo: conferir
 		const { id } = pathParameters
-		if (!id) return res(400, { message: "Parâmetros inválidos." })
+		if (!body) return res(400, { message: "Parâmetros inválidos." })
 		const { nome, email, telefone } = JSON.parse(body)
 
+		const { Item: lead } = await dynamo
+			.get({
+				TableName: "leads",
+				Key: {
+					id,
+				},
+			})
+			.promise()
+		if (!lead) return res(404, { message: "Lead não encontrada." })
 		await dynamo
 			.update({
 				TableName: "leads",
@@ -36,9 +44,9 @@ const handleRequest = async (
 					id,
 				},
 				AttributeUpdates: {
-					nome: { Value: nome },
-					email: { Value: email },
-					telefone: { Value: telefone },
+					nome: { Value: nome || lead.nome },
+					email: { Value: email || lead.email },
+					telefone: { Value: telefone || lead.telefone },
 				},
 			})
 			.promise()
@@ -69,17 +77,18 @@ const handleRequest = async (
 		const { nome, email, telefone = "" } = JSON.parse(body)
 		if (!nome || !email) return res(400, { message: "Parâmetros inválidos." })
 		// Check if email is already registered
-		const {Items: [lead] } = await dynamo
+		const {
+			Items: [lead],
+		} = await dynamo
 			.scan({
 				TableName: "leads",
 				FilterExpression: "email = :email",
 				ExpressionAttributeValues: {
-					":email": email
-				}
+					":email": email,
+				},
 			})
 			.promise()
-		if (lead)
-			return res(409, { message: "E-mail já cadastrado." })
+		if (lead) return res(409, { message: "E-mail já cadastrado." })
 		await dynamo
 			.put({
 				TableName: "leads",
@@ -97,20 +106,20 @@ const handleRequest = async (
 	}
 
 	if (routeKey === "PUT /convert") {
-		const { email, telefone } = queryStringParameters
-		if (!email && !telefone) return res(400, { message: "Parâmetros inválidos." })
-		const {Items: [lead] } = await dynamo
+		const { email } = queryStringParameters
+		if (!email) return res(400, { message: "Parâmetros inválidos." })
+		const {
+			Items: [lead],
+		} = await dynamo
 			.scan({
 				TableName: "leads",
-				FilterExpression: "email = :email OR telefone = :telefone",
+				FilterExpression: "email = :email",
 				ExpressionAttributeValues: {
 					":email": email,
-					":telefone": telefone
-				}
+				},
 			})
 			.promise()
-		if (!lead)
-			return res(404, { message: "Lead não encontrada." })
+		if (!lead) return res(404, { message: "Lead não encontrada." })
 		if (lead.clientSince)
 			return res(409, { message: "Lead já atualizada anteriormente." })
 		await dynamo

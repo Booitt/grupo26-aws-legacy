@@ -1,5 +1,8 @@
 {
   "formulario": {
     "component": "Formulario"
+  },
+  "spacer": {
+    "component": "Spacer"
   }
 }

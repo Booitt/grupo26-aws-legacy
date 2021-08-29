@@ -9,11 +9,9 @@
 .imageElement--logo-header {
   margin-left: 20px;
 }
-.imageElement--logo-phone-img {
-  max-width: 240px;
-}
+
 .imageElement--img-banner {
-  width: 100%;
+  width: 100vw;
   height: 300px;
   opacity: 0.9;
 }
@@ -22,20 +20,6 @@
   height: auto;
   margin: 0 20px 40px;
 }
-
-/*Estilizando scrollbar*/
-::-webkit-scrollbar{
-  width: 8px;
-  height: 6px;
-  background-color: #e5eaef;
-}
-
-::-webkit-scrollbar-thumb{
-  border-radius: 30px;
-  background-color: #727272;
-  scroll-behavior: smooth;
-  animation: scroll 10s linear 1s infinite;
-}
 .imageElement--cover {
   object-fit: cover;
 }
@@ -43,4 +27,45 @@
   width: 50%;
   margin: 0 auto;
 }
+.infoCardHeadline--info-card-banner{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFF;
+}
+.infoCardSubhead--info-card-banner{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFF;
+}
+.infoCardContainer--info-card-banner{
+  position: relative;
+  bottom: 275px;
+  border: none;
+}
 
+
+
+/* Banner slider info card */
+
+.infoCardContainer--home-banner-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.infoCardHeadline {
+  color: white;
+}
+
+.infoCardSubhead {
+  color: white;
+}
+
+/* Jessica */
+.imageElement--logo-sobre{
+  width: 300px;
+}
+.imageElement--logo-product{
+  width: 300px;
+}

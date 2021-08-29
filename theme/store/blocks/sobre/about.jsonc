@@ -1,0 +1,11 @@
+{
+  "store.custom#sobre": {
+    "blocks": [
+      "responsive-layout.desktop#sobre",
+      "responsive-layout.mobile#sobre",
+      "responsive-layout.desktop#certificados",
+      "responsive-layout.desktop#benefits",
+      "responsive-layout.mobile#benefits"
+    ]
+  }
+}

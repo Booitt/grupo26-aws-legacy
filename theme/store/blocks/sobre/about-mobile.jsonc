@@ -1,0 +1,161 @@
+{
+  "responsive-layout.mobile#sobre": {
+    "children": ["flex-layout.row#sobre-inicio-mobile"]
+  },
+  "flex-layout.row#sobre-inicio-mobile": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "sobre-inicio-mobile"
+    },
+    "children": ["flex-layout.col#sobre-inicio-mobile"]
+  },
+  "flex-layout.col#sobre-inicio-mobile": {
+    "props": {
+      "blockClass": "sobre-inicio-col-mobile"
+    },
+    "children": [
+      "image#logo-sobre-mobile",
+      "rich-text#section-one-title-mobile",
+      "rich-text#section-one-sobre-text-mobile"
+    ]
+  },
+
+  "image#logo-sobre-mobile": {
+    "props": {
+      "blockClass": "logo-phone-img",
+      "src": "assets/home/logo-home.svg"
+    }
+  },
+  "rich-text#section-one-title-mobile": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sobre os certificados AWS",
+      "blockClass": "section-one-title-mobile"
+    }
+  },
+  "rich-text#section-one-sobre-text-mobile": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "center",
+      "text": "Você pode se beneficiar de uma grande variedade de insights de especialistas, recursos e programas à medida que avança em direção à obtenção da AWS Certification. Caso esteja começando agora ou esteja em busca de uma nova certificação, a AWS ajuda você a validar com eficácia a sua experiência na nuvem.",
+      "blockClass": "section-one-sobre-text-mobile"
+    }
+  },
+  "responsive-layout.desktop#certificados-mobile": {
+    "children": [
+      "flex-layout.row#certificados-title",
+      "flex-layout.row#certificados"
+    ]
+  }
+  //   "flex-layout.row#certificados-title": {
+  //     "props": {
+  //       "horizontalAlign": "center",
+  //       "verticalAlign": "center",
+  //       "preventHorizontalStretch": true,
+  //       "preventVerticalStretch": true,
+  //       "fullWidth": true,
+  //       "blockClass": "section-two-title"
+  //     },
+  //     "children": ["flex-layout.col#certificados-title"]
+  //   },
+  //   "flex-layout.col#certificados-title": {
+  //     "children": ["rich-text#certificados-title"]
+  //   },
+  //   "rich-text#certificados-title": {
+  //     "props": {
+  //       "textAlignment": "center",
+  //       "textPosition": "center",
+  //       "text": "Certificados AWS disponíveis",
+  //       "blockClass": "section-two-title"
+  //     }
+  //   },
+  //   "flex-layout.row#certificados": {
+  //     "props": {
+  //       "horizontalAlign": "center",
+  //       "verticalAlign": "center",
+  //       "preventHorizontalStretch": true,
+  //       "preventVerticalStretch": true,
+  //       "fullWidth": true,
+  //       "blockClass": "section-two"
+  //     },
+  //     "children": [
+  //       "flex-layout.col#tipos",
+  //       "flex-layout.col#certificados-logo",
+  //       "flex-layout.col#section-two-text"
+  //     ]
+  //   },
+  //   "flex-layout.col#tipos": {
+  //     "props": {
+  //       "blockClass": "col-tipos"
+  //     },
+  //     "children": [
+  //       "rich-text#professional",
+  //       "rich-text#associate",
+  //       "rich-text#fundational",
+  //       "rich-text#specialty"
+  //     ]
+  //   },
+  //   "rich-text#professional": {
+  //     "props": {
+  //       "textAlignment": "center",
+  //       "textPosition": "center",
+  //       "text": "Professional",
+  //       "blockClass": "text-col-certificates"
+  //     }
+  //   },
+  //   "rich-text#associate": {
+  //     "props": {
+  //       "textAlignment": "center",
+  //       "textPosition": "center",
+  //       "text": "Associate",
+  //       "blockClass": "text-col-certificates"
+  //     }
+  //   },
+  //   "rich-text#fundational": {
+  //     "props": {
+  //       "textAlignment": "center",
+  //       "textPosition": "center",
+  //       "text": "Fundational",
+  //       "blockClass": "text-col-certificates"
+  //     }
+  //   },
+  //   "rich-text#specialty": {
+  //     "props": {
+  //       "textAlignment": "center",
+  //       "textPosition": "center",
+  //       "text": "Specialty",
+  //       "blockClass": "text-col-certificates"
+  //     }
+  //   },
+  //   "flex-layout.col#certificados-logo": {
+  //     "props": {
+  //       "blockClass": "col-logo"
+  //     },
+  //     "children": ["image#logo-product"]
+  //   },
+  //   "image#logo-product": {
+  //     "props": {
+  //       "blockClass": "logo-product",
+  //       "src": "assets/sobre/product-image.svg"
+  //     }
+  //   },
+  //   "flex-layout.col#section-two-text": {
+  //     "props": {
+  //       "blockClass": "section-two-col-text"
+  //     },
+  //     "children": ["rich-text#section-two-text"]
+  //   },
+  //   "rich-text#section-two-text": {
+  //     "props": {
+  //       "textAlignment": "left",
+  //       "textPosition": "center",
+  //       "text": "Você pode se beneficiar de uma grande variedade de insights de especialistas, recursos e programas à medida que avança em direção à obtenção da AWS Certification. Caso esteja começando agora ou esteja em busca de uma nova certificação, a AWS ajuda você a validar com eficácia a sua experiência na nuvem.",
+  //       "blockClass": "section-two-text"
+  //     }
+  //   }
+}
