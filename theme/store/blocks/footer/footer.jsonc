@@ -137,19 +137,28 @@
   //Layout Mobile
 
   "flex-layout.row#mobile-footer": {
+    "children": ["flex-layout.col#mobile-footer"]
+  },
+
+  "flex-layout.col#mobile-footer": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "left"
+    },
     "children": [
       "flex-layout.row#mobile-social",
       "vtex.menu@2.x:menu#footer-mobile",
       "flex-layout.row#mobile-copyright"
     ]
   },
+
   "flex-layout.row#mobile-social": {
     "props": {
       "marginTop": 2,
       "paddingTop": 3,
       "paddingBottom": 3,
       "blockClass": "mobile-social",
-      "horizontalAlign": "center",
+      "horizontalAlign": "left",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
@@ -160,10 +169,10 @@
   "flex-layout.row#mobile-copyright": {
     "props": {
       "horizontalAlign": "center",
-      "verticalAlign": "center",
+      "verticalAlign": "left",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": false,
+      "fullWidth": true,
       "blockClass": "copyright"
     },
     "children": ["rich-text#footer-1", "rich-text#footer-2"]
