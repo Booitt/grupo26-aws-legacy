@@ -70,20 +70,14 @@
   margin: 0 40px 70px;
 }
 .flexRowContent--section-two {
+  background-color: #FFF;
+  padding: 30px;
   justify-content: space-around;
 }
 .flexRow--section-one-sobre-text {
   margin: 0 0 70px;
 }
-.flexColChild--col-logo {
-  background-color: #fff;
-}
-.flexColChild--section-two-col-text {
-  background-color: #fff;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
+
 .flexColChild--sobre-inicio-col{
   width: 100vw;
   background-color: #FFF;
