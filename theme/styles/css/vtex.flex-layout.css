@@ -57,15 +57,17 @@
   background-color: #232f3e;
 }
 .flexCol--col-content-desktop {
+  font-size: 30px;
   background-color: #232f3e;
-  padding: 50px 70px;
-  width: 1200px;
+  padding: 50px 3rem;
+  width: 100%;
 }
 .flexRowContent--row1-benefits{
   justify-content: space-around;
+  margin-top: 20px;
 }
 .flexRow--row2-benefits{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 /* Fim*/
 

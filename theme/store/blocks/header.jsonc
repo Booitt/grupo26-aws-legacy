@@ -34,18 +34,18 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["image#logo"]
+    "children": ["logo#logo"]
   },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
     }
   },
-  "image#logo": {
+  "logo#logo": {
     "props": {
-      "src": "assets/logo-header/logo-header.svg",
-      "maxHeight": 50,
-      "link": "/",
+      "url": "assets/logo-header/logo-header.svg",
+      "height": 50,
+      "href": "/",
       "blockClass": "logo-header"      
     }
   },
@@ -57,7 +57,7 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      "image#logo",
+      "logo#logo",
       "minicart.v2"
     ],
     "props": {

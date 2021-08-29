@@ -1,17 +1,7 @@
 {
-    "spacer#vertical-5": {
-        "props": {
-            "verticalSpace": "5rem"
-        }
-    },
     "spacer#vertical-3": {
         "props": {
             "verticalSpace": "3rem"
-        }
-    },
-    "spacer#vertical-1": {
-        "props": {
-            "verticalSpace": "1rem"
         }
     }
 }
