@@ -9,9 +9,7 @@
 .imageElement--logo-header {
   margin-left: 20px;
 }
-.imageElement--logo-phone-img {
-  max-width: 240px;
-}
+
 .imageElement--img-banner {
   width: 100vw;
   height: 300px;
@@ -46,7 +44,7 @@
   bottom: 275px;
   border: none;
 }
-/* Sobre inicio*/
+
 
 
 /* Banner slider info card */
