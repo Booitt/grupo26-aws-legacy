@@ -7,7 +7,6 @@
       "responsive-layout.desktop#home-products-slider",
       "responsive-layout.mobile#home-products-slider",
       "responsive-layout.desktop#benefits",
-      // "responsive-layout.phone#benefits",
       "responsive-layout.mobile#benefits"
     ]
   }
