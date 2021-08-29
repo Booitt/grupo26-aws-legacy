@@ -5,7 +5,13 @@ const List = styled.ul`
   padding: 0;
 
   li {
+    display: flex;
     border-bottom: 2px solid #f71963;
+
+    div {
+      width: 50%;
+    }
+    
   }
 `
 

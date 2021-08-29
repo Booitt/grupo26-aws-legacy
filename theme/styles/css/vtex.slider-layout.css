@@ -9,3 +9,7 @@
 	color: #e47911;
 	margin: 0.5rem;
 }
+
+.sliderTrack--carousel {
+	height: 25rem;
+}
