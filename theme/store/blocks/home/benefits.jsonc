@@ -80,7 +80,7 @@
 			"highlight": false,
 			"itemProps": {
 				"type": "internal",
-				"href": "#",
+				"href": "/sobre",
 				"noFollow": false,
 				"tagTitle": "Learn",
 				"text": "Saiba mais sobre a AWS"
@@ -180,7 +180,7 @@
 			"highlight": false,
 			"itemProps": {
 				"type": "internal",
-				"href": "#",
+				"href": "/sobre",
 				"noFollow": false,
 				"tagTitle": "Learn",
 				"text": "Saiba mais sobre a AWS"
