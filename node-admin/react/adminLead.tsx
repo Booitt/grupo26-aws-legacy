@@ -20,14 +20,7 @@ const AdminLead: FC = () => {
   
   useEffect(() => {
     axios.get('https://7slql6j8i0.execute-api.us-east-2.amazonaws.com/leads')
-      .then((resp) => setLeads([...resp.data.Items, {
-        id:'teste',
-        nome:'teste',
-        email:'teste',
-        telefone:'21999999',
-        prospectSince:1630106120828,
-        clientSince: false
-      }]))
+      .then((resp) => setLeads(resp.data.Items))
       .catch((_) => setLeads([]))
       .finally(() => setLoading(false))
   }, [])
@@ -44,7 +37,7 @@ const AdminLead: FC = () => {
     <Layout>
       <PageBlock
         title="Leads"
-        subtitle="Lista de leads"
+        subtitle="Lista de leads do grupo 26 - AWS"
         variation="full"
       >
     {
@@ -52,40 +45,46 @@ const AdminLead: FC = () => {
         <p>Obtendo Leads</p>
       ) : (
         <>
-          <h1>Leads do grupo 26</h1>
+          <h1>Informações sobre os leads</h1>
           <Header>
-            <p onClick={handleToggleClient}  id="prospecto" className={`${!clients ? 'active' : ''}`}>Prospectos</p>
-            <p onClick={handleToggleClient} id="cliente" className={`${clients ? 'active' : ''}`}>Clientes</p>
+            <div>
+              <p onClick={handleToggleClient}  id="prospecto" className={ `select ${!clients ? 'active' : ''}`}>Prospectos</p>
+              <p onClick={handleToggleClient} id="cliente" className={`select ${clients ? 'active' : ''}`}>Clientes</p>
+            </div>
+            <div className="info">
+              <p>Prospectos: {leads.filter(lead => lead.clientSince === false).length}</p>
+              <p>Clientes: {leads.filter(lead => lead.clientSince !== false).length}</p>
+            </div>
           </Header>
           <List>
-            {!clients 
-              ? leads
-                  .filter(lead => lead.clientSince === false)
-                  .map(lead => (
-                    <li key={lead.id}>
-                      <div>
-                        <p>Nome: {lead.nome}</p>
-                        <p>Email: {lead.email}</p>
-                        {lead.telefone && (<p>Telefone: {lead.telefone}</p>)}
-                      </div>
+            {clients ?
+              leads
+                .filter(lead => lead.clientSince !== false)
+                .map(lead => (
+                  <li key={lead.id}>
+                    <div>
+                      <p>Nome: {lead.nome}</p>
+                      <p>Email: {lead.email}</p>
+                      {lead.telefone && (<p>Telefone: {lead.telefone}</p>)}
+                    </div>
+                    <div>
                       <p>Data de cadastro: {new Date(lead.prospectSince).toLocaleDateString('pt-BR')}</p>
-                    </li>
-                  )) 
-              : leads
-                  .filter(lead => lead.clientSince !== false)
-                  .map(lead => (
-                    <li key={lead.id}>
-                      <div>
-                        <p>Nome: {lead.nome}</p>
-                        <p>Email: {lead.email}</p>
-                        {lead.telefone && (<p>Telefone: {lead.telefone}</p>)}
-                      </div>
-                      <div>
-                        <p>Data de cadastro: {new Date(lead.prospectSince).toLocaleDateString('pt-BR')}</p>
-                        <p>Data de conversão: {new Date(lead.clientSince as number).toLocaleDateString('pt-BR')}</p>
-                      </div>
-                    </li>
-                  ))
+                      <p>Data de conversão: {new Date(lead.clientSince as number).toLocaleDateString('pt-BR')}</p>
+                    </div>
+                  </li>
+                )) :
+                leads
+                .filter(lead => lead.clientSince === false)
+                .map(lead => (
+                  <li key={lead.id}>
+                    <div>
+                      <p>Nome: {lead.nome}</p>
+                      <p>Email: {lead.email}</p>
+                      {lead.telefone && (<p>Telefone: {lead.telefone}</p>)}
+                    </div>
+                    <p>Data de cadastro: {new Date(lead.prospectSince).toLocaleDateString('pt-BR')}</p>
+                  </li>
+                ))
             }
           </List>
         </>
