@@ -66,5 +66,23 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
+  },
+  "header-layout#tablet": {
+    "children": ["sticky-layout#tablet"]
+  },
+  "sticky-layout#tablet": {
+    "children": ["flex-layout.row#tablet"]
+  },
+  "flex-layout.row#tablet": {
+    "children": [
+      "logo#logo",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
   }
 }

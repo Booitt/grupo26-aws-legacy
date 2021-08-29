@@ -9,6 +9,13 @@
 }
 /* Fim */
 
+/* Primeira sessão */
+.flexRow--row-form-tablet{
+  margin: 0 20px;
+}
+.flexCol--col-tablet-text{
+  padding: 0 20px;
+}
 /* Footer */
 .flexRowContent--copyright {
 	margin-top: 2%;
@@ -17,6 +24,14 @@
 }
 .flexRowContent--mobile-social {
 	padding-left: 20px;
+}
+@media (min-width: 768px){
+	.flexRow--form-mobile{
+	  display: none;
+	}
+  .flexRow--content-phone{
+    display: none;
+  }
 }
 /* Fim */
 
@@ -33,12 +48,24 @@
   padding: 50px 3rem;
   width: 100%;
 }
+.flexCol--col-content-tablet {
+  font-size: 30px;
+  background-color: #232f3e;
+  padding: 25px;
+  width: 100%;
+}
 .flexRowContent--row1-benefits{
   justify-content: space-around;
   margin-top: 20px;
 }
 .flexRow--row2-benefits{
   margin-top: 30px;
+}
+.flexRow--tablet{
+  margin: 0 20px 30px;
+}
+.flexRow--row-form-tablet{
+  margin: 70px 20px;
 }
 /* Fim*/
 
