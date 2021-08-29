@@ -1,10 +1,9 @@
-
-.cartIcon{
-    color: #EC7211;
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+/*Adicionando margin no ícone do carrinho, localizado na home*/
 .openIconContainer{
     margin-right: 20px;
 }
+/*Estilizando footer do minicart*/
 .minicartSummary--minicart-checkout-footer{
     border-top: 1px solid #c0c1c3;
     font-family: "Noto Sans", sans-serif;

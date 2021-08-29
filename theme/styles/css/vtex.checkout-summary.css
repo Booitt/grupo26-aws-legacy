@@ -1,11 +1,20 @@
+/*Importando fonte*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+/*Removendo padding do container total, do minicart */
 .summaryItemContainer{
     padding: 0;
 }
+
+/*Estilizando texto "Taxas e frete calculado no carrinho", presente no rodapé do minicart"*/
 .summarySmallDisclaimer{
     text-align: center;
     font-family: "Noto Sans", sans-serif;
+    margin: 15px 0 5px 0;
 }
-.minicartCheckoutButton{
+
+/*Estilizando título: "Resumo do seu pedido" localizado no footer do minicart*/
+.summaryTitle{
     font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
 }
