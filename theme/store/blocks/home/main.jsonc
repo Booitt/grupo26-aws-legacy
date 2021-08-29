@@ -6,7 +6,8 @@
 	"flex-layout.row#desktop-form-section-main": {
     "props": {
       "marginTop": 10,
-      "marginBottom": 10
+      "marginBottom": 10,
+      "blockClass": "row-form"
     },
 		"children": [
 			"flex-layout.col#form-section-text",
@@ -15,7 +16,7 @@
 	},
 	"flex-layout.col#form-section-text": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "top"
     },
 		"children": ["rich-text#form-section-text"]
 	},
@@ -28,8 +29,9 @@
   },
   "flex-layout.row#mobile-form-section-main": {
     "props": {
-      "marginTop": 10,
-      "marginBottom": 10
+      "marginTop": 2,
+      "marginBottom": 6,
+      "blockClass": "form-mobile"
     },
     "children": [
 			"flex-layout.col#form-section-form"
@@ -40,13 +42,15 @@
     "props": {
       "text": "### Solicite seu exame prático gratuito",
       "textPosition": "CENTER",
-      "textAlignment": "CENTER"
+      "textAlignment": "CENTER",
+      "blockClass":"form-title"
     }
   },
 	"rich-text#form-section-text": {
 		"props": {
 			"text": "### Habilidades em cloud estão em alta demanda. Agora é a hora de mostrar suas habilidades e crescer com a cloud. Você quer mostrar que pode projetar uma solução AWS, implantar um aplicativo sem servidor ou automatizar o teste e a implantação na AWS? Comece ganhando uma credencial da AWS reconhecida pelo setor.",
-      "textAlignment": "CENTER"
+      "textAlignment": "CENTER",
+      "blockClass":"banner-text"
     }
 	}
 }
