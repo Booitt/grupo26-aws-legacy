@@ -1,9 +1,12 @@
+/*Estilizando o layout do footer*/
 .footerLayout {
   background-color: #232f3e;
 }
+/*Estilizando o Powered By do footer*/
 .poweredBy{
   margin-left: 20px;
 }
+/*Estilizando os métodos de pagamento do footer*/
 .acceptedPaymentMethodContainer{
   margin-left: 17px;
 }

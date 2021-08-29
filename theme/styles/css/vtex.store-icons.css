@@ -1,3 +1,8 @@
 .cartIcon--minicart-empty-state{
     color: #000000;
 }
+
+.cartIcon{
+    color: #ffffff;
+    opacity: 90%;
+}

@@ -69,3 +69,19 @@
 .imageElement--logo-product{
   width: 300px;
 }
+
+
+/*Estilizando scrollbar*/
+::-webkit-scrollbar{
+  width: 8px;
+  height: 6px;
+  background-color: #e5eaef;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 30px;
+  background-color: #727272;
+  scroll-behavior: smooth;
+  animation: scroll 10s linear 1s infinite;
+}
+/*Fim*/
