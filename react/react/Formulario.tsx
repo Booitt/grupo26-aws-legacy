@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, Suspense, lazy } from "react"
 import axios from "axios"
-import { CircularProgress } from "@material-ui/core"
 import classes from "./styles/Formulario.module.css"
 import { LEADS_API_URL } from "./utils/constants"
 import { phoneMask, validateEmail } from "./utils/utils"
+const CircularProgress = lazy(() => import("@material-ui/core/CircularProgress"))
 
 const initial = {
 	nome: "",
@@ -25,6 +25,7 @@ const Formulario: React.FC = () => {
 	const { nome, email, telefone } = inputs
 	const errMsg = Object.values(inputError).filter((v) => v)
 
+	// Cannot extract id and value from ChangeEvent<HTMLInputElement>
 	const handleInput = (e: React.ChangeEvent<any>) => {
 		const { id, value } = e.target
 		setInputs((state) => {
@@ -137,10 +138,12 @@ const Formulario: React.FC = () => {
 					</>
 				)}
 				{sending && (
-					<CircularProgress
-						size={60}
-						style={{ color: "#ec7211", margin: "auto" }}
-					/>
+					<Suspense fallback={<div></div>}>
+						<CircularProgress
+							size={60}
+							style={{ color: "#ec7211", margin: "auto" }}
+						/>
+					</Suspense>
 				)}
 				{showSucessMsg && (
 					<p className={classes.successMsg}>

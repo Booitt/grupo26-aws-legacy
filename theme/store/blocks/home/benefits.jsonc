@@ -50,25 +50,25 @@
 	},
 	"rich-text#learn": {
 		"props": {
-			"text": "Treine com um expert da AWS",
+			"text": "&#8227; Treine com um expert da AWS",
 			"blockClass": "text-benefits"
 		}
 	},
 	"rich-text#pick": {
 		"props": {
-			"text": "Escolha seu caminho de treinamento",
+			"text": "&#8227; Escolha seu caminho de treinamento",
 			"blockClass": "text-benefits"
 		}
 	},
 	"rich-text#train": {
 		"props": {
-			"text": "Aprenda no seu ritmo",
+			"text": "&#8227; Aprenda no seu ritmo",
 			"blockClass": "text-benefits"
 		}
 	},
 	"rich-text#get": {
 		"props": {
-			"text": "Obtenha um certificado AWS",
+			"text": "&#8227; Obtenha um certificado AWS",
 			"blockClass": "text-benefits"
 		}
 	},

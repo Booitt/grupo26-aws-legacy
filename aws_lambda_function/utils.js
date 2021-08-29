@@ -10,7 +10,7 @@ const handleRequest = async (
 ) => {
 	if (routeKey === "GET /leads/{id}") {
 		const { id } = pathParameters
-		const lead = await dynamo
+		const { Item: lead } = await dynamo
 			.get({
 				TableName: "leads",
 				Key: {
