@@ -5,7 +5,7 @@
       "responsive-layout.mobile#sobre",
       "responsive-layout.desktop#certificados",
       "responsive-layout.desktop#benefits",
-      "responsive-layout.phone#benefits"
+      "responsive-layout.mobile#benefits"
     ]
   }
 }
