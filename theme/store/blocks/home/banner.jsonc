@@ -2,10 +2,6 @@
   "responsive-layout.desktop#slider": {
     "children": ["slider-layout#banner-desktop"]
   },
-  // "responsive-layout.phone#slider": {
-  //   "children": ["slider-layout#banner-phone"]
-  // },
-
   "slider-layout#banner-desktop": {
     "props": {
       "itemsPerPage": {
